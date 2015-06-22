@@ -17,5 +17,4 @@ class TestTrafficSourceParser < Minitest::Test
     assert_equal "Pinterest", TrafficSourceParser.parse("https://www.pinterest.com/")
   end
 
-
 end

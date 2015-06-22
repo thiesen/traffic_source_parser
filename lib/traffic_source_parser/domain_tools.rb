@@ -17,7 +17,6 @@ module TrafficSourceParser
       Regexp.new(domain)
     end
 
-
   end
 
 end

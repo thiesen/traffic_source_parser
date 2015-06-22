@@ -16,14 +16,14 @@ module TrafficSourceParser
 
   def source_parser
     TrafficSourceParser.sources_list.each do |source_type, sources|
-      _, src = sources.find {|key, _| key =~ referrer_regex }
+      _, src = sources.find { |key, _| key =~ referrer_regex }
       parser = self.const_get source_type.capitalize
       return parser.process(@referrer, src)
     end
   end
 
   def sources_list
-    @@sources_lists ||= YAML.load_file './config/sources.yml'
+    @sources_lists ||= YAML.load_file './config/sources.yml'
   end
 
 end
