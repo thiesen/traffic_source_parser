@@ -1,12 +1,11 @@
+require 'ostruct'
+
 module TrafficSourceParser
-  module Social
-    extend self
+  class Social < OpenStruct
 
-    def process(referrer, source)
-      return source
+    def initialize(network, href)
+      super(ccn: "(social)", csr: network, href: href)
     end
-
   end
 
 end
-
