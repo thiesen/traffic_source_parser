@@ -16,7 +16,7 @@ module TrafficSourceParser
 
   def source_parser
     TrafficSourceParser.sources_list.each do |source_type, sources|
-      _, src = sources.detect {|key, _| key =~ referrer_regex } #find
+      _, src = sources.find {|key, _| key =~ referrer_regex }
       parser = self.const_get source_type.capitalize
       return parser.process(@referrer, src)
     end
