@@ -8,8 +8,6 @@ module TrafficSourceParser
 
         def utmz_hash
           parse_utmz_params.to_h
-        rescue ArgumentError
-          {}
         end
 
         def utmz_params
@@ -17,7 +15,7 @@ module TrafficSourceParser
         end
 
         def parse_utmz_params
-          utmz_params.map {|s| s.split('=') }
+          utmz_params.map {|param| param.split('=') }
         end
       end
     end
