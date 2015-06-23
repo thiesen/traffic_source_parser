@@ -1,8 +1,8 @@
-require 'ostruct'
+require 'traffic_source_parser/parsers/abstract_parser'
 
 module TrafficSourceParser
   module Parsers
-    class SocialParser < OpenStruct
+    class SocialParser < AbstractParser
 
       def initialize(source, referrer)
         @referrer = referrer
