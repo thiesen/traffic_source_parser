@@ -6,3 +6,7 @@ rvm:
 before_script: "bundle update"
 
 script: "bundle exec rake"
+
+addons:
+  code_climate:
+    repo_token: a2c2115d34b9a68764093fc0d944868cc01f0a5564cf20560e5ee4a4b71f7067
