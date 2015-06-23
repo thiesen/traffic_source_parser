@@ -20,7 +20,7 @@ describe TrafficSourceParser do
         ]
       end
 
-      it "returns a TrafficSourceParser::Parsers::SocialParser object with the correct (fake) utm csr" do
+      it "returns TrafficSourceParser::Parsers::ReferrerParser::Social object with the correct (fake) utm csr" do
         social_sources.each do |source|
           parsed_result = TrafficSourceParser.parse(source[:referrer])
           expect(parsed_result).to be_a TrafficSourceParser::Parsers::ReferrerParser::Social
@@ -92,16 +92,16 @@ describe TrafficSourceParser do
         ]
       end
 
-      # it "returns TrafficSourceParser::Parsers::UtmzParser with attributes" do
-      #   utmz_sources.each do |source|
-      #     utmz = source.delete(:utmz)
-      #     parsed_result = TrafficSourceParser.parse(utmz)
-      #     expect(parsed_result).to be_a TrafficSourceParser::Parsers::UtmzParser
-      #     source.keys.each do |key|
-      #       expect(parsed_result.send(key)).to eq source[key]
-      #     end
-      #   end
-      # end
+      it "returns TrafficSourceParser::Parsers::UtmzParser with attributes" do
+        utmz_sources.each do |source|
+          utmz = source.delete(:utmz)
+          parsed_result = TrafficSourceParser.parse(utmz)
+          expect(parsed_result).to be_a TrafficSourceParser::Parsers::UtmzParser::Utmz
+          source.keys.each do |key|
+            expect(parsed_result.send(key)).to eq source[key]
+          end
+        end
+      end
 
     end
   end
