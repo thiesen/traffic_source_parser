@@ -1,16 +1,28 @@
-require 'traffic_source_parser/parsers/social_parser'
-require 'traffic_source_parser/parsers/generic_parser'
+require "traffic_source_parser/parsers/referrer_parser"
 
 module TrafficSourceParser
   module Parsers
     extend self
 
-    PARSERS = {
-      "social" => SocialParser
-    }
+    def create(cookie_value)
+      @cookie_value = cookie_value
+      parser.parse cookie_value
+    end
 
-    def create(source_type)
-      PARSERS[source_type] || GenericParser
+    private
+
+    def parser
+      return UtmzParser if is_utmz?
+      return CampaignParser if is_campaign?
+      ReferrerParser
+    end
+
+    def is_utmz?
+      false
+    end
+
+    def is_campaign?
+      false
     end
 
   end
