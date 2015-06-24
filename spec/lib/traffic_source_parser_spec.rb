@@ -23,23 +23,19 @@ describe TrafficSourceParser do
 
     context "when source is a recognized social network" do
 
-      let(:social_sources) do
+      let(:sources) do
         [
-          { referrer: "https://www.facebook.com/", source: "Facebook" },
-          { referrer:  "http://t.co/W1pX6dNa2V", source: "Twitter" },
-          { referrer: "https://www.linkedin.com/", source: "LinkedIn" },
-          { referrer: "http://plus.url.google.com/url", source: "Google Plus" },
-          { referrer: "https://www.pinterest.com/", source: "Pinterest" }
+          { cookie_value: "https://www.facebook.com/", source: "Facebook" },
+          { cookie_value:  "http://t.co/W1pX6dNa2V", source: "Twitter" },
+          { cookie_value: "https://www.linkedin.com/", source: "LinkedIn" },
+          { cookie_value: "http://plus.url.google.com/url", source: "Google Plus" },
+          { cookie_value: "https://www.pinterest.com/", source: "Pinterest" }
         ]
       end
 
-      it "returns TrafficSourceParser::Parsers::ReferrerParser::Social object with the correct (fake) utm csr" do
-        social_sources.each do |source|
-          parsed_result = TrafficSourceParser.parse(source[:referrer])
-          expect(parsed_result).to be_a TrafficSourceParser::Parsers::ReferrerParser::Social
-          expect(parsed_result.csr).to eq source[:source]
-        end
-      end
+      let(:klass) { TrafficSourceParser::Parsers::ReferrerParser::Social }
+
+      it_behaves_like "returns the correct object with attributes"
 
     end
 
