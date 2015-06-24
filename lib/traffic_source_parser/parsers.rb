@@ -24,7 +24,7 @@ module TrafficSourceParser
     end
 
     def is_campaign?
-      @cookie_value.include?("utm_campaign")|| @cookie_value.include?("utm_source")
+      @cookie_value.include? "campaign:"
     end
 
   end
