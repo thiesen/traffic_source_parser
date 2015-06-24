@@ -113,21 +113,21 @@ describe TrafficSourceParser do
       let(:sources) do
         [
           {
-            cookie_value: "http://www.example.com/?utm_campaign=spring&utm_m" +
+            cookie_value: "campaign:utm_campaign=spring&utm_m" +
                           "edium=referral&utm_source=exampleblog",
             utm_campaign: "spring" ,
             utm_medium: "referral" ,
             utm_source: "exampleblog"
           },
           {
-            cookie_value: "http://www.example.com/?utm_campaign=spring&utm_m" +
+            cookie_value: "campaign:utm_campaign=spring&utm_m" +
                           "edium=email&utm_source=newsletter1",
             utm_campaign: "spring",
             utm_medium: "email",
             utm_source: "newsletter1"
           },
           {
-            cookie_value: "http://www.example.com/?utm_campaign=spring&utm_m" +
+            cookie_value: "campaign:utm_campaign=spring&utm_m" +
                           "edium=email&utm_source=newsletter1&utm_content=to" +
                           "plink",
             utm_campaign: "spring",
@@ -136,7 +136,7 @@ describe TrafficSourceParser do
             utm_content: "toplink"
           },
           {
-            cookie_value: "http://shipit.resultadosdigitais.com.br/?utm_sour" +
+            cookie_value: "campaign:utm_sour" +
                           "ce=Self+Test+List&utm_campaign=c2994af7da-xunda_m" +
                           "other_campaign&utm_medium=email&utm_term=0_f85d50" +
                           "388c-c2994af7da-69634449",
