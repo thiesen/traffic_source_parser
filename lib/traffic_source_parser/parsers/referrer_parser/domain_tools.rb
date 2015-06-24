@@ -1,4 +1,4 @@
-require 'ostruct'
+require 'public_suffix'
 
 module TrafficSourceParser
   module Parsers

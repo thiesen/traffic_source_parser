@@ -153,7 +153,7 @@ describe TrafficSourceParser do
         ]
       end
 
-      let(:klass) { TrafficSourceParser::Parsers::CampaignParser }
+      let(:klass) { TrafficSourceParser::Parsers::CampaignParser::Campaign }
 
       it_behaves_like "returns the correct object with attributes"
 

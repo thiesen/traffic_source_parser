@@ -1,5 +1,6 @@
 require "traffic_source_parser/parsers/referrer_parser"
 require "traffic_source_parser/parsers/utmz_parser"
+require "traffic_source_parser/parsers/campaign_parser"
 
 module TrafficSourceParser
   module Parsers
@@ -23,7 +24,7 @@ module TrafficSourceParser
     end
 
     def is_campaign?
-      false
+      @cookie_value.include?("utm_campaign")|| @cookie_value.include?("utm_source")
     end
 
   end
