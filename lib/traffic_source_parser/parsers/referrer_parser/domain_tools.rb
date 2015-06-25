@@ -10,7 +10,7 @@ module TrafficSourceParser
       end
 
       def clear_domain
-        ref = @referrer
+        ref = @referrer.dup
         ref.gsub!(/.*?:\/\//, '')
         ref.gsub(/\/.*$/, '')
       end

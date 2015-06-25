@@ -1,0 +1,249 @@
+facebook.com:
+  source: Facebook
+  type: social
+fb.me:
+  source: Facebook
+  type: social
+qzone.qq.com:
+  source: Qzone
+  type: social
+habbo.com:
+  source: Haboo
+  type: social
+twitter.com:
+  source: Twitter
+  type: social
+t.co:
+  source: Twitter
+  type: social
+renren.com:
+  source: Renren
+  type: social
+login.live.com:
+  source: Windows Live Spaces
+  type: social
+linkedin.com:
+  source: LinkedIn
+  type: social
+bebo.com:
+  source: Bebo
+  type: social
+vk.com:
+  source: Vkontakte
+  type: social
+vkontakte.ru:
+  source: Vkontakte
+  type: social
+login.tagged.com:
+  source: Tagged
+  type: social
+orkut.com:
+  source: Orkut
+  type: social
+myspace.com:
+  source: Myspace
+  type: social
+friendster.com:
+  source: Friendster
+  type: social
+badoo.com:
+  source: Badoo
+  type: social
+hi5.com:
+  source: hi5
+  type: social
+netlog.com:
+  source: Netlog
+  type: social
+flixster.com:
+  source: Flixster
+  type: social
+mylife.ru:
+  source: MyLife
+  type: social
+classmates.com:
+  source: Classmates.com
+  type: social
+github.com:
+  source: Github
+  type: social
+url.google.com:
+  source: Google Plus
+  type: social
+douban.com:
+  source: douban
+  type: social
+odnoklassniki.ru:
+  source: Odnoklassniki
+  type: social
+viadeo.com:
+  source: Viadeo
+  type: social
+flickr.com:
+  source: Flickr
+  type: social
+weeworld.com:
+  source: WeeWorld
+  type: social
+last.fm:
+  source: Last.fm
+  type: social
+lastfm.ru:
+  source: Last.fm
+  type: social
+lastfm.de:
+  source: Last.fm
+  type: social
+lastfm.es:
+  source: Last.fm
+  type: social
+lastfm.fr:
+  source: Last.fm
+  type: social
+lastfm.it:
+  source: Last.fm
+  type: social
+lastfm.jp:
+  source: Last.fm
+  type: social
+lastfm.pl:
+  source: Last.fm
+  type: social
+lastfm.com.br:
+  source: Last.fm
+  type: social
+lastfm.se:
+  source: Last.fm
+  type: social
+lastfm.com.tr:
+  source: Last.fm
+  type: social
+myheritage.com:
+  source: MyHeritage
+  type: social
+xanga.com:
+  source: Xanga
+  type: social
+mixi.jp:
+  source: Mixi
+  type: social
+global.cyworld.com:
+  source: Cyworld
+  type: social
+gaiaonline.com:
+  source: Gaia Online
+  type: social
+skyrock.com:
+  source: Skyrock
+  type: social
+blackplanet.com:
+  source: BlackPlanet
+  type: social
+myyearbook.com:
+  source: myYearbook
+  type: social
+fotolog.com:
+  source: Fotolog
+  type: social
+friendsreunited.com:
+  source: Friends Reunited
+  type: social
+livejournal.ru:
+  source: LiveJournal
+  type: social
+livejournal.com:
+  source: LiveJournal
+  type: social
+studivz.net:
+  source: StudiVZ
+  type: social
+meinvz.net:
+  source: MeinVZ
+  type: social
+stackoverflow.com:
+  source: StackOverflow
+  type: social
+sonico.com:
+  source: Sonico.com
+  type: social
+pinterest.com:
+  source: Pinterest
+  type: social
+plaxo.com:
+  source: Plaxo
+  type: social
+geni.com:
+  source: Geni.com
+  type: social
+tuenti.com:
+  source: Tuenti
+  type: social
+xing.com:
+  source: XING
+  type: social
+taringa.net:
+  source: Taringa!
+  type: social
+nk.pl:
+  source: Nasza-klasa.pl
+  type: social
+stumbleupon.com:
+  source: StumbleUpon
+  type: social
+sourceforge.net:
+  source: SourceForge
+  type: social
+hyves.nl:
+  source: Hyves
+  type: social
+wayn.com:
+  source: WAYN
+  type: social
+buzznet.com:
+  source: Buzznet
+  type: social
+multiply.com:
+  source: Multiply
+  type: social
+foursquare.com:
+  source: Foursquare
+  type: social
+vkrugudruzei.ru:
+  source: vkrugudruzei.ru
+  type: social
+my.mail.ru:
+  source: my.mail.ru
+  type: social
+moikrug.ru:
+  source: moikrug.ru
+  type: social
+reddit.com:
+  source: reddit
+  type: social
+news.ycombinator.com:
+  source: Hacker News
+  type: social
+identi.ca:
+  source: identi.ca
+  type: social
+weibo.com:
+  source: Weibo
+  type: social
+t.cn:
+  source: Weibo
+  type: social
+youtube.com:
+  source: YouTube
+  type: social
+youtu.be:
+  source: YouTube
+  type: social
+vimeo.com:
+  source: Vimeo
+  type: social
+tumblr.com:
+  source: tumblr
+  type: social
+xunda:
+  source: dunha
+  type: search

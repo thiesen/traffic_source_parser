@@ -5,9 +5,8 @@ module TrafficSourceParser
     module ReferrerParser
       class Generic < OpenStruct
 
-        def initialize(source, referrer)
-          @referrer = referrer
-          super(ccn: "(direct)", csr: "none")
+        def initialize(referrer)
+          super(source: referrer)
         end
 
       end

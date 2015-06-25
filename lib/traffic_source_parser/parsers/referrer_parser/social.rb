@@ -5,7 +5,7 @@ module TrafficSourceParser
     module ReferrerParser
       class Social < OpenStruct
 
-        def initialize(source, referrer)
+        def initialize(source, referrer = nil)
           super(source: source)
         end
 
