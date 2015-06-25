@@ -21,90 +21,122 @@ describe TrafficSourceParser do
 
   describe ".parse" do
 
-    context "when source is a recognized social network" do
+  	context "when source is referrer" do
 
-      let(:sources) do
-        [
-          { cookie_value: "https://www.facebook.com/", source: "Facebook" },
-          { cookie_value:  "http://t.co/W1pX6dNa2V", source: "Twitter" },
-          { cookie_value: "https://www.linkedin.com/", source: "LinkedIn" },
-          { cookie_value: "http://plus.url.google.com/url", source: "Google Plus" },
-          { cookie_value: "https://www.pinterest.com/", source: "Pinterest" }
-        ]
-      end
+  		context "and isn't a recognized referrer" do
 
-      let(:klass) { TrafficSourceParser::Parsers::ReferrerParser::Social }
+  			let(:sources) do
+  				[
+  					{
+  						cookie_value: "http://shipit.resultadosdigitais.com.br",
+  						source:  "http://shipit.resultadosdigitais.com.br"
+  					},
+  					{
+  						cookie_value: "https://thoughtbot.com/",
+  						source:  "https://thoughtbot.com/"
+  					},
+  					{
+  						cookie_value: "https://rubygems.org/",
+  						source:  "https://rubygems.org/"
+  					},
+  					{
+  						cookie_value: "https://www.ruby-lang.org/",
+  						source:  "https://www.ruby-lang.org/"
+  					},
+  				]
+  			end
 
-      it_behaves_like "returns the correct object with attributes"
+  			let(:klass) {  TrafficSourceParser::Parsers::ReferrerParser::Generic }
 
-    end
+  			it_behaves_like "returns the correct object with attributes"
 
-    context "when source is utmz" do
+  		end
 
-      let(:sources) do
-        [
-          {
-            cookie_value: "utmz:256172697.1432831709.1.1.utmcsr=(direct)|utm" +
-                          "ccn=(direct)|utmcmd=(none)",
-            utmcsr: "(direct)",
-            utmccn: "(direct)",
-            utmcmd: "(none)"
-          },
-          {
-            cookie_value: "utmz:231152653.1432828491.1.1.utmcsr=t.co|utmccn" +
-                          "=(referral)|utmcmd=referral|utmcct=/EFzCFawFrk",
-            utmcsr: "t.co",
-            utmccn: "(referral)",
-            utmcmd: "referral",
-            utmcct: "/EFzCFawFrk"
-          },
-          {
-            cookie_value: "utmz:10083233.1432828099.1.1.utmcsr=facebook.com|" +
-                          "utmccn=20150528-ef-aprovacaoharvard|utmcmd=social" +
-                          "media-fe",
-            utmcsr: "facebook.com",
-            utmccn: "20150528-ef-aprovacaoharvard",
-            utmcmd: "socialmedia-fe"
-          },
-          {
-            cookie_value: "utmz:153788330.1432828657.1.1.utmcsr=(direct)|utm" +
-                          "ccn=(direct)|utmcmd=(none)",
-            utmcsr: "(direct)",
-            utmccn: "(direct)",
-            utmcmd: "(none)"
-          },
-          {
-            cookie_value: "utmz:210677130.1432831711.1.1.utmcsr=rakuten|utmc" +
-                          "cn=linkshare|utmcmd=(not set)",
-            utmcsr: "rakuten",
-            utmccn: "linkshare",
-            utmcmd: "(not set)"
-          },
-          {
-            cookie_value: "utmz:10083233.1432828147.6.5.utmcsr=newsletter|ut" +
-                          "mccn=20150527|utmcmd=newsletter-ef|utmctr=communi" +
-                          "tycolleges|utmcct=programa",
-            utmcsr: "newsletter",
-            utmccn: "20150527",
-            utmcmd: "newsletter-ef",
-            utmctr: "communitycolleges",
-            utmcct: "programa"
-          },
-          {
-            cookie_value: "utmz:63514687.1432831892.1.1.utmcsr=adwords_gereb" +
-                          "oletos1min5_22072014|utmgclid=CNjQrtjy5MUCFQYXHwo" +
-                          "d7k0A8g|utmccn=(not set)|utmcmd=(not set)",
-            utmcsr: "adwords_gereboletos1min5_22072014",
-            utmgclid: "CNjQrtjy5MUCFQYXHwod7k0A8g",
-            utmccn: "(not set)",
-            utmcmd: "(not set)"
-          }
-        ]
-      end
+	    context "and is a recognized social network" do
 
-      let(:klass) { TrafficSourceParser::Parsers::UtmzParser::Utmz }
+	      let(:sources) do
+	        [
+	          { cookie_value: "https://www.facebook.com/", source: "Facebook" },
+	          { cookie_value:  "http://t.co/W1pX6dNa2V", source: "Twitter" },
+	          { cookie_value: "https://www.linkedin.com/", source: "LinkedIn" },
+	          { cookie_value: "http://plus.url.google.com/url", source: "Google Plus" },
+	          { cookie_value: "https://www.pinterest.com/", source: "Pinterest" }
+	        ]
+	      end
 
-      it_behaves_like "returns the correct object with attributes"
+	      let(:klass) { TrafficSourceParser::Parsers::ReferrerParser::Social }
+
+	      it_behaves_like "returns the correct object with attributes"
+
+	    end
+
+	    context "when source is utmz" do
+
+	      let(:sources) do
+	        [
+	          {
+	            cookie_value: "utmz:256172697.1432831709.1.1.utmcsr=(direct)|utm" +
+	                          "ccn=(direct)|utmcmd=(none)",
+	            utmcsr: "(direct)",
+	            utmccn: "(direct)",
+	            utmcmd: "(none)"
+	          },
+	          {
+	            cookie_value: "utmz:231152653.1432828491.1.1.utmcsr=t.co|utmccn" +
+	                          "=(referral)|utmcmd=referral|utmcct=/EFzCFawFrk",
+	            utmcsr: "t.co",
+	            utmccn: "(referral)",
+	            utmcmd: "referral",
+	            utmcct: "/EFzCFawFrk"
+	          },
+	          {
+	            cookie_value: "utmz:10083233.1432828099.1.1.utmcsr=facebook.com|" +
+	                          "utmccn=20150528-ef-aprovacaoharvard|utmcmd=social" +
+	                          "media-fe",
+	            utmcsr: "facebook.com",
+	            utmccn: "20150528-ef-aprovacaoharvard",
+	            utmcmd: "socialmedia-fe"
+	          },
+	          {
+	            cookie_value: "utmz:153788330.1432828657.1.1.utmcsr=(direct)|utm" +
+	                          "ccn=(direct)|utmcmd=(none)",
+	            utmcsr: "(direct)",
+	            utmccn: "(direct)",
+	            utmcmd: "(none)"
+	          },
+	          {
+	            cookie_value: "utmz:210677130.1432831711.1.1.utmcsr=rakuten|utmc" +
+	                          "cn=linkshare|utmcmd=(not set)",
+	            utmcsr: "rakuten",
+	            utmccn: "linkshare",
+	            utmcmd: "(not set)"
+	          },
+	          {
+	            cookie_value: "utmz:10083233.1432828147.6.5.utmcsr=newsletter|ut" +
+	                          "mccn=20150527|utmcmd=newsletter-ef|utmctr=communi" +
+	                          "tycolleges|utmcct=programa",
+	            utmcsr: "newsletter",
+	            utmccn: "20150527",
+	            utmcmd: "newsletter-ef",
+	            utmctr: "communitycolleges",
+	            utmcct: "programa"
+	          },
+	          {
+	            cookie_value: "utmz:63514687.1432831892.1.1.utmcsr=adwords_gereb" +
+	                          "oletos1min5_22072014|utmgclid=CNjQrtjy5MUCFQYXHwo" +
+	                          "d7k0A8g|utmccn=(not set)|utmcmd=(not set)",
+	            utmcsr: "adwords_gereboletos1min5_22072014",
+	            utmgclid: "CNjQrtjy5MUCFQYXHwod7k0A8g",
+	            utmccn: "(not set)",
+	            utmcmd: "(not set)"
+	          }
+	        ]
+	      end
+
+	      let(:klass) { TrafficSourceParser::Parsers::UtmzParser::Utmz }
+
+	      it_behaves_like "returns the correct object with attributes"
+	  end
 
     end
 
