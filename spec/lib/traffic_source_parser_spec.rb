@@ -70,6 +70,29 @@ describe TrafficSourceParser do
 
 	    end
 
+      context "and is a recognized search egine" do
+
+        let(:sources) do
+          [
+            { cookie_value: "http://r.search.yahoo.com/_ylt=AwrBTv5RjZpVbJ8A" +
+                            "J23z6Qt.;_ylu=X3oDMTE0MjJuYj…2fshipit.resultado" +
+                            "sdigitais.com.br%2f/RK=0/RS=Y_bOYZ72hkyElUK0URY" +
+                            "LlSFeQUo-", source: "Yahoo" },
+            { cookie_value: "http://www.bing.com/search?q=shipit+resultados" +
+                            "+digitais&go=Submit&qs=n&form…esultados+digita" +
+                            "is&sc=1-27&sp=-1&sk=&cvid=df2f6cabe2d343e9ab98" +
+                            "d90a98fcc5c5", source: "Bing" },
+            { cookie_value: "https://www.google.com.br/", source: "Google" },
+          ]
+        end
+
+        let(:klass) { TrafficSourceParser::Parsers::ReferrerParser::Search }
+
+        it_behaves_like "returns the correct object with attributes"
+
+      end
+    end
+
 	    context "when source is utmz" do
 
 	      let(:sources) do
@@ -186,5 +209,5 @@ describe TrafficSourceParser do
       it_behaves_like "returns the correct object with attributes"
 
     end
-  end
+
 end

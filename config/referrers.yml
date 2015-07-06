@@ -790,6 +790,9 @@ ocnsearch.goo.ne.jp:
 google.com:
   source: Google
   type: search
+google.com.br:
+  source: Google
+  type: search
 www2.google.com:
   source: Google
   type: search
@@ -1077,4 +1080,7 @@ search.iminent.com:
   type: search
 utorrent.inspsearch.com:
   source: InfoSpace
+  type: search
+search.yahoo.com:
+  source: Yahoo
   type: search
