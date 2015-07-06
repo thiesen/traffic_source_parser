@@ -1,5 +1,4 @@
 require 'traffic_source_parser/parsers/campaign_parser/campaign'
-require 'uri'
 
 module TrafficSourceParser
   module Parsers

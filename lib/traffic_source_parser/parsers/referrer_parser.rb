@@ -31,7 +31,7 @@ module TrafficSourceParser
       def recognized_parser
         parser = define_referrer_parser(@referrer_data["type"])
         source = @referrer_data["source"]
-        parser.new source
+        parser.new source, @referrer
       end
 
       def params_for_referrer

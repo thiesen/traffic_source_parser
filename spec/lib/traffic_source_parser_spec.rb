@@ -81,7 +81,8 @@ describe TrafficSourceParser do
             { cookie_value: "http://www.bing.com/search?q=shipit+resultados" +
                             "+digitais&go=Submit&qs=n&form…esultados+digita" +
                             "is&sc=1-27&sp=-1&sk=&cvid=df2f6cabe2d343e9ab98" +
-                            "d90a98fcc5c5", source: "Bing" },
+                            "d90a98fcc5c5", source: "Bing", query: "shipit " +
+                            "resultados digitais" },
             { cookie_value: "https://www.google.com.br/", source: "Google" },
           ]
         end
