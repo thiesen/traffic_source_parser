@@ -24,12 +24,12 @@ It sets `parsed_source` as a specific `TrafficSourceParser::Parser` object, with
 
 Referrer is a listed social network:
 
-`#<TrafficSourceParser::Parser::ReferrerParser::Social source="Facebook">`
+`#<TrafficSourceParser::Result::Social source="Facebook">`
 
 Referrer is from a listed search engine:
 
-`#<WIP>`
+`#<TrafficSourceParser::Result::Search source="Bing", query="shipit resultados digitais">`
 
 Referrer is unknown
 
-`#<TrafficSourceParser::Parser::ReferrerParser::Generic source="http://www.resultadosdigitais.com.br">`
+`#<TrafficSourceParser::Result::Generic source="http://www.resultadosdigitais.com.br">`
