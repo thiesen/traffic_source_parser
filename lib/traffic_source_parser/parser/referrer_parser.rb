@@ -1,7 +1,7 @@
-require 'traffic_source_parser/parser/referrer_parser/social'
-require 'traffic_source_parser/parser/referrer_parser/search'
-require 'traffic_source_parser/parser/referrer_parser/generic'
+require 'traffic_source_parser/result/generic'
 require 'traffic_source_parser/parser/referrer_parser/domain_tools'
+require 'traffic_source_parser/parser/referrer_parser/social_parser'
+require 'traffic_source_parser/parser/referrer_parser/search_parser'
 require 'yaml'
 
 module TrafficSourceParser
@@ -9,13 +9,11 @@ module TrafficSourceParser
     module ReferrerParser
       extend self
 
-      extend DomainTools
-
       # TODO - worst module ever...REFACTOR
 
       REFERRER_PARSERS = {
-        "social" => Social,
-        "search" => Search
+        "social" => SocialParser,
+        "search" => SearchParser
       }
 
       def parse(referrer)
@@ -25,18 +23,18 @@ module TrafficSourceParser
 
       def create_referrer_parser
         return recognized_parser if params_for_referrer
-        Generic.new @referrer
+        TrafficSourceParser::Result::Generic.new(@referrer)
       end
 
       def recognized_parser
         parser = define_referrer_parser(@referrer_data["type"])
         source = @referrer_data["source"]
-        parser.new source, @referrer
+        parser.result(@referrer, source)
       end
 
       def params_for_referrer
         _, @referrer_data = referrers_list.find do |referrer, referrer_hash|
-          referrer =~ referrer_regex
+          referrer =~ DomainTools.referrer_regex(@referrer)
         end
       end
 

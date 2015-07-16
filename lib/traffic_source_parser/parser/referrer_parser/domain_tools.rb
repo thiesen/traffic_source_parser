@@ -4,20 +4,23 @@ module TrafficSourceParser
   module Parser
     module ReferrerParser
       module DomainTools
+        extend self
 
-      def domain
-        PublicSuffix.parse(clear_domain).domain
-      end
+        def referrer_regex(url)
+          @url = url.dup
+          Regexp.new(domain)
+        end
 
-      def clear_domain
-        ref = @referrer.dup
-        ref.gsub!(/.*?:\/\//, '')
-        ref.gsub(/\/.*$/, '')
-      end
+        private
 
-      def referrer_regex
-        Regexp.new(domain)
-      end
+        def domain
+          PublicSuffix.parse(clear_domain).domain
+        end
+
+        def clear_domain
+          @url.gsub!(/.*?:\/\//, '')
+          @url.gsub(/\/.*$/, '')
+        end
 
       end
     end

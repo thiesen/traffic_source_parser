@@ -1,5 +1,5 @@
 require 'traffic_source_parser/parser/utmz_parser/utmz_tools'
-require 'traffic_source_parser/parser/utmz_parser/utmz'
+require 'traffic_source_parser/result/utmz'
 
 module TrafficSourceParser
   module Parser
@@ -10,7 +10,7 @@ module TrafficSourceParser
 
       def parse(utmz)
         @utmz = utmz
-        return Utmz.new(utmz_hash)
+        TrafficSourceParser::Result::Utmz.new(utmz_hash)
       end
 
     end
