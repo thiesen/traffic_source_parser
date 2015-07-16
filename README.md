@@ -14,17 +14,17 @@ It sets `parsed_source` as a specific `TrafficSourceParser::Parser` object, with
 
 #### Cookie value is **utmz**:
 
-`#<TrafficSourceParser::Parsers::UtmzParser::Utmz utmcsr="t.co", utmccn="(referral)", utmcmd="referral", utmcct="/EFzCFawFrk">`
+`#<TrafficSourceParser::Parser::UtmzParser::Utmz utmcsr="t.co", utmccn="(referral)", utmcmd="referral", utmcct="/EFzCFawFrk">`
 
 #### Cookie value is **campaign**:
 
-`#<TrafficSourceParser::Parsers::CampaignParser::Campaign utm_campaign="spring", utm_medium="email", utm_source="newsletter1", utm_content="toplink">`
+`#<TrafficSourceParser::Parser::CampaignParser::Campaign utm_campaign="spring", utm_medium="email", utm_source="newsletter1", utm_content="toplink">`
 
 #### Cookie value is a **referrer**:
 
 Referrer is a listed social network:
 
-`#<TrafficSourceParser::Parsers::ReferrerParser::Social source="Facebook">`
+`#<TrafficSourceParser::Parser::ReferrerParser::Social source="Facebook">`
 
 Referrer is from a listed search engine:
 
@@ -32,4 +32,4 @@ Referrer is from a listed search engine:
 
 Referrer is unknown
 
-`#<TrafficSourceParser::Parsers::ReferrerParser::Generic source="http://www.resultadosdigitais.com.br">`
+`#<TrafficSourceParser::Parser::ReferrerParser::Generic source="http://www.resultadosdigitais.com.br">`

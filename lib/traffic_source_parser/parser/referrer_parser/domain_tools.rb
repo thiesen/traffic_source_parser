@@ -1,7 +1,7 @@
 require 'public_suffix'
 
 module TrafficSourceParser
-  module Parsers
+  module Parser
     module ReferrerParser
       module DomainTools
 

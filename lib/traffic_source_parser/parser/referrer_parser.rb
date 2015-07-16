@@ -1,11 +1,11 @@
-require 'traffic_source_parser/parsers/referrer_parser/social'
-require 'traffic_source_parser/parsers/referrer_parser/search'
-require 'traffic_source_parser/parsers/referrer_parser/generic'
-require 'traffic_source_parser/parsers/referrer_parser/domain_tools'
+require 'traffic_source_parser/parser/referrer_parser/social'
+require 'traffic_source_parser/parser/referrer_parser/search'
+require 'traffic_source_parser/parser/referrer_parser/generic'
+require 'traffic_source_parser/parser/referrer_parser/domain_tools'
 require 'yaml'
 
 module TrafficSourceParser
-  module Parsers
+  module Parser
     module ReferrerParser
       extend self
 

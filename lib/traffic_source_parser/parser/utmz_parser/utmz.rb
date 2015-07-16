@@ -1,7 +1,7 @@
 require 'ostruct'
 
 module TrafficSourceParser
-  module Parsers
+  module Parser
     module UtmzParser
       class Utmz < OpenStruct
 

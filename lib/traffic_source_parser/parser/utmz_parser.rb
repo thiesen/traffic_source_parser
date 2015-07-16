@@ -1,8 +1,8 @@
-require 'traffic_source_parser/parsers/utmz_parser/utmz_tools'
-require 'traffic_source_parser/parsers/utmz_parser/utmz'
+require 'traffic_source_parser/parser/utmz_parser/utmz_tools'
+require 'traffic_source_parser/parser/utmz_parser/utmz'
 
 module TrafficSourceParser
-  module Parsers
+  module Parser
     module UtmzParser
       extend self
 

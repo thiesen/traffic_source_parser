@@ -1,9 +1,9 @@
-require "traffic_source_parser/parsers/referrer_parser"
-require "traffic_source_parser/parsers/utmz_parser"
-require "traffic_source_parser/parsers/campaign_parser"
+require "traffic_source_parser/parser/referrer_parser"
+require "traffic_source_parser/parser/utmz_parser"
+require "traffic_source_parser/parser/campaign_parser"
 
 module TrafficSourceParser
-  module Parsers
+  module Parser
     extend self
 
     def create(cookie_value)

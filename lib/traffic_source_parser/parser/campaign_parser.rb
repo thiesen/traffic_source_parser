@@ -1,7 +1,7 @@
-require 'traffic_source_parser/parsers/campaign_parser/campaign'
+require 'traffic_source_parser/parser/campaign_parser/campaign'
 
 module TrafficSourceParser
-  module Parsers
+  module Parser
     module CampaignParser
       extend self
 
