@@ -46,7 +46,7 @@ describe TrafficSourceParser do
   				]
   			end
 
-  			let(:klass) {  TrafficSourceParser::Parser::ReferrerParser::Generic }
+  			let(:klass) {  TrafficSourceParser::Result::Generic }
 
   			it_behaves_like "returns the correct object with attributes"
 
@@ -64,7 +64,7 @@ describe TrafficSourceParser do
 	        ]
 	      end
 
-	      let(:klass) { TrafficSourceParser::Parser::ReferrerParser::Social }
+	      let(:klass) { TrafficSourceParser::Result::Social }
 
 	      it_behaves_like "returns the correct object with attributes"
 
@@ -87,7 +87,7 @@ describe TrafficSourceParser do
           ]
         end
 
-        let(:klass) { TrafficSourceParser::Parser::ReferrerParser::Search }
+        let(:klass) { TrafficSourceParser::Result::Search }
 
         it_behaves_like "returns the correct object with attributes"
 
@@ -157,7 +157,7 @@ describe TrafficSourceParser do
 	        ]
 	      end
 
-	      let(:klass) { TrafficSourceParser::Parser::UtmzParser::Utmz }
+	      let(:klass) { TrafficSourceParser::Result::Utmz }
 
 	      it_behaves_like "returns the correct object with attributes"
 	  end
@@ -205,7 +205,7 @@ describe TrafficSourceParser do
         ]
       end
 
-      let(:klass) { TrafficSourceParser::Parser::CampaignParser::Campaign }
+      let(:klass) { TrafficSourceParser::Result::Campaign }
 
       it_behaves_like "returns the correct object with attributes"
 

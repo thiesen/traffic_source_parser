@@ -1,18 +1,19 @@
-require 'ostruct'
+require 'traffic_source_parser/result/search'
 
 module TrafficSourceParser
   module Parser
     module ReferrerParser
-      class Search < OpenStruct
+      module SearchParser
+        extend self
 
         QUERY = {
           "Bing" => /search\?q=(.*?)&/,
         }
 
-        def initialize(source, referrer)
-          @source = source
+        def result(referrer, source)
           @referrer = referrer
-          super(search_hash)
+          @source = source
+          TrafficSourceParser::Result::Search.new(search_hash)
         end
 
         def search_hash

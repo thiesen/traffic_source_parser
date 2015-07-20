@@ -1,4 +1,4 @@
-require 'traffic_source_parser/parser/campaign_parser/campaign'
+require 'traffic_source_parser/result/campaign'
 
 module TrafficSourceParser
   module Parser
@@ -7,7 +7,7 @@ module TrafficSourceParser
 
       def parse(campaign_query)
         @campaign_query = campaign_query
-        return Campaign.new(campaign_hash)
+        TrafficSourceParser::Result::Campaign.new(campaign_hash)
       end
 
       def campaign_hash
