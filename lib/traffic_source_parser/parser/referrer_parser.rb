@@ -43,7 +43,7 @@ module TrafficSourceParser
       end
 
       def referrers_list
-        @sources_lists ||= YAML.load_file './config/referrers.yml'
+        @sources_lists ||= YAML::load_file(File.join(TrafficSourceParser.config_path, 'referrers.yml'))
       end
 
     end
