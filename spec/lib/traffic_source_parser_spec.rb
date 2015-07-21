@@ -27,16 +27,20 @@ describe TrafficSourceParser do
         [
           {
             cookie_value: "",
-            source:  "(none)"
+            source: "(direct)",
+            campaign: "(direct)",
+            medium: "(none)"
           },
           {
             cookie_value: "(none)",
-            source:  "(none)"
+            source: "(direct)",
+            campaign: "(direct)",
+            medium: "(none)"
           }
         ]
       end
 
-      let(:klass) {  TrafficSourceParser::Result::Generic }
+      let(:klass) {  TrafficSourceParser::Result::Direct }
 
       it_behaves_like "returns the correct object with attributes"
 
@@ -123,14 +127,14 @@ describe TrafficSourceParser do
 	            cookie_value: "256172697.1432831709.1.1.utmcsr=(direct)|utm" +
 	                          "ccn=(direct)|utmcmd=(none)",
 	            source: "(direct)",
-	            name: "(direct)",
+	            campaign: "(direct)",
 	            medium: "(none)"
 	          },
 	          {
 	            cookie_value: "231152653.1432828491.1.1.utmcsr=t.co|utmccn" +
 	                          "=(referral)|utmcmd=referral|utmcct=/EFzCFawFrk",
 	            source: "t.co",
-	            name: "(referral)",
+	            campaign: "(referral)",
 	            medium: "referral",
 	            content: "/EFzCFawFrk"
 	          },
@@ -139,21 +143,21 @@ describe TrafficSourceParser do
 	                          "utmccn=20150528-ef-aprovacaoharvard|utmcmd=social" +
 	                          "media-fe",
 	            source: "facebook.com",
-	            name: "20150528-ef-aprovacaoharvard",
+	            campaign: "20150528-ef-aprovacaoharvard",
 	            medium: "socialmedia-fe"
 	          },
 	          {
 	            cookie_value: "153788330.1432828657.1.1.utmcsr=(direct)|utm" +
 	                          "ccn=(direct)|utmcmd=(none)",
 	            source: "(direct)",
-	            name: "(direct)",
+	            campaign: "(direct)",
 	            medium: "(none)"
 	          },
 	          {
 	            cookie_value: "210677130.1432831711.1.1.utmcsr=rakuten|utmc" +
 	                          "cn=linkshare|utmcmd=(not set)",
 	            source: "rakuten",
-	            name: "linkshare",
+	            campaign: "linkshare",
 	            medium: "(not set)"
 	          },
 	          {
@@ -161,7 +165,7 @@ describe TrafficSourceParser do
 	                          "mccn=20150527|utmcmd=newsletter-ef|utmctr=communi" +
 	                          "tycolleges|utmcct=programa",
 	            source: "newsletter",
-	            name: "20150527",
+	            campaign: "20150527",
 	            medium: "newsletter-ef",
 	            term: "communitycolleges",
 	            content: "programa"
@@ -171,7 +175,7 @@ describe TrafficSourceParser do
 	                          "oletos1min5_22072014|utmgclid=CNjQrtjy5MUCFQYXHwo" +
 	                          "d7k0A8g|utmccn=(not set)|utmcmd=(not set)",
 	            source: "adwords_gereboletos1min5_22072014",
-	            name: "(not set)",
+	            campaign: "(not set)",
 	            medium: "cpc"
 	          }
 	        ]
@@ -191,14 +195,14 @@ describe TrafficSourceParser do
           {
             cookie_value: "utm_campaign=spring&utm_m" +
                           "edium=referral&utm_source=exampleblog",
-            name: "spring" ,
+            campaign: "spring" ,
             medium: "referral" ,
             source: "exampleblog"
           },
           {
             cookie_value: "utm_campaign=spring&utm_m" +
                           "edium=email&utm_source=newsletter1",
-            name: "spring",
+            campaign: "spring",
             medium: "email",
             source: "newsletter1"
           },
@@ -206,7 +210,7 @@ describe TrafficSourceParser do
             cookie_value: "utm_campaign=spring&utm_m" +
                           "edium=email&utm_source=newsletter1&utm_content=to" +
                           "plink",
-            name: "spring",
+            campaign: "spring",
             medium: "email",
             source: "newsletter1",
             content: "toplink"
@@ -217,7 +221,7 @@ describe TrafficSourceParser do
                           "other_campaign&utm_medium=email&utm_term=0_f85d50" +
                           "388c-c2994af7da-69634449",
             source: "Self+Test+List",
-            name: "c2994af7da-xunda_mother_campaign",
+            campaign: "c2994af7da-xunda_mother_campaign",
             medium: "email",
             term: "0_f85d50388c-c2994af7da-69634449"
 
