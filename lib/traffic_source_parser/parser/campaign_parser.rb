@@ -1,4 +1,5 @@
 require 'traffic_source_parser/result/campaign'
+require 'uri'
 
 module TrafficSourceParser
   module Parser
@@ -16,7 +17,7 @@ module TrafficSourceParser
         translated_campaign_hash = {}
         parse_campaign_params.to_h.each do |key, value|
           translated_key = campaign_params_mapper[key] || key
-          translated_campaign_hash[translated_key] = value
+          translated_campaign_hash[translated_key] = URI.unescape(value)
         end
         if translated_campaign_hash.delete("utmgclid")
           translated_campaign_hash["medium"] = "cpc"
