@@ -1,4 +1,5 @@
 require 'traffic_source_parser/result/generic'
+require 'traffic_source_parser/result/direct'
 require 'traffic_source_parser/parser/referrer_parser/domain_tools'
 require 'traffic_source_parser/parser/referrer_parser/social_parser'
 require 'traffic_source_parser/parser/referrer_parser/search_parser'
@@ -22,7 +23,8 @@ module TrafficSourceParser
       end
 
       def create_referrer_parser
-        return recognized_parser if DomainTools.valid?(@referrer) && params_for_referrer
+        return  TrafficSourceParser::Result::Direct.new if direct_source?
+        return recognized_parser if params_for_referrer
         TrafficSourceParser::Result::Generic.new(@referrer)
       end
 
@@ -44,6 +46,10 @@ module TrafficSourceParser
 
       def referrers_list
         @sources_lists ||= YAML::load_file(File.join(TrafficSourceParser.config_path, 'referrers.yml'))
+      end
+
+      def direct_source?
+        @referrer.empty? || !DomainTools.valid?(@referrer)
       end
 
     end
