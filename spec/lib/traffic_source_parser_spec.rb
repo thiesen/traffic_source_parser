@@ -177,7 +177,16 @@ describe TrafficSourceParser do
 	            source: "adwords_gereboletos1min5_22072014",
 	            campaign: "(not set)",
 	            medium: "cpc"
-	          }
+	          },
+            {
+              cookie_value: "1.1111111111.1.1.utmcsr=facebook|utmccn=experim" +
+                            "entar-ferramenta|utmcmd=sponsored-post|utmctr=|" +
+                            "utmcct=organize-seus-negocios",
+              source: "facebook",
+              campaign: "experimentar-ferramenta",
+              medium: "sponsored-post",
+              content: "organize-seus-negocios"
+            }
 	        ]
 	      end
 

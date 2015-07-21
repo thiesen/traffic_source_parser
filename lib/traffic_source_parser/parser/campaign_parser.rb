@@ -30,7 +30,8 @@ module TrafficSourceParser
       end
 
       def parse_campaign_params
-        campaign_params.map {|param| param.split('=') }
+        campaign_params.map { |param| param.split('=') }.
+        delete_if { |params| params.size != 2 }
       end
 
       def campaign_params_mapper
