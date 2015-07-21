@@ -21,6 +21,27 @@ describe TrafficSourceParser do
 
   describe ".parse" do
 
+    context "when cookie value is empty or (none)" do
+
+      let(:sources) do
+        [
+          {
+            cookie_value: "",
+            source:  "(none)"
+          },
+          {
+            cookie_value: "(none)",
+            source:  "(none)"
+          }
+        ]
+      end
+
+      let(:klass) {  TrafficSourceParser::Result::Generic }
+
+      it_behaves_like "returns the correct object with attributes"
+
+    end
+
   	context "when source is referrer" do
 
   		context "and isn't a recognized referrer" do

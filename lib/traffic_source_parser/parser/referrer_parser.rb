@@ -22,7 +22,7 @@ module TrafficSourceParser
       end
 
       def create_referrer_parser
-        return recognized_parser if params_for_referrer
+        return recognized_parser if DomainTools.valid?(@referrer) && params_for_referrer
         TrafficSourceParser::Result::Generic.new(@referrer)
       end
 
