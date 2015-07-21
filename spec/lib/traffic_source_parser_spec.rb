@@ -99,65 +99,64 @@ describe TrafficSourceParser do
 	      let(:sources) do
 	        [
 	          {
-	            cookie_value: "utmz:256172697.1432831709.1.1.utmcsr=(direct)|utm" +
+	            cookie_value: "256172697.1432831709.1.1.utmcsr=(direct)|utm" +
 	                          "ccn=(direct)|utmcmd=(none)",
-	            utmcsr: "(direct)",
-	            utmccn: "(direct)",
-	            utmcmd: "(none)"
+	            source: "(direct)",
+	            name: "(direct)",
+	            medium: "(none)"
 	          },
 	          {
-	            cookie_value: "utmz:231152653.1432828491.1.1.utmcsr=t.co|utmccn" +
+	            cookie_value: "231152653.1432828491.1.1.utmcsr=t.co|utmccn" +
 	                          "=(referral)|utmcmd=referral|utmcct=/EFzCFawFrk",
-	            utmcsr: "t.co",
-	            utmccn: "(referral)",
-	            utmcmd: "referral",
-	            utmcct: "/EFzCFawFrk"
+	            source: "t.co",
+	            name: "(referral)",
+	            medium: "referral",
+	            content: "/EFzCFawFrk"
 	          },
 	          {
-	            cookie_value: "utmz:10083233.1432828099.1.1.utmcsr=facebook.com|" +
+	            cookie_value: "10083233.1432828099.1.1.utmcsr=facebook.com|" +
 	                          "utmccn=20150528-ef-aprovacaoharvard|utmcmd=social" +
 	                          "media-fe",
-	            utmcsr: "facebook.com",
-	            utmccn: "20150528-ef-aprovacaoharvard",
-	            utmcmd: "socialmedia-fe"
+	            source: "facebook.com",
+	            name: "20150528-ef-aprovacaoharvard",
+	            medium: "socialmedia-fe"
 	          },
 	          {
-	            cookie_value: "utmz:153788330.1432828657.1.1.utmcsr=(direct)|utm" +
+	            cookie_value: "153788330.1432828657.1.1.utmcsr=(direct)|utm" +
 	                          "ccn=(direct)|utmcmd=(none)",
-	            utmcsr: "(direct)",
-	            utmccn: "(direct)",
-	            utmcmd: "(none)"
+	            source: "(direct)",
+	            name: "(direct)",
+	            medium: "(none)"
 	          },
 	          {
-	            cookie_value: "utmz:210677130.1432831711.1.1.utmcsr=rakuten|utmc" +
+	            cookie_value: "210677130.1432831711.1.1.utmcsr=rakuten|utmc" +
 	                          "cn=linkshare|utmcmd=(not set)",
-	            utmcsr: "rakuten",
-	            utmccn: "linkshare",
-	            utmcmd: "(not set)"
+	            source: "rakuten",
+	            name: "linkshare",
+	            medium: "(not set)"
 	          },
 	          {
-	            cookie_value: "utmz:10083233.1432828147.6.5.utmcsr=newsletter|ut" +
+	            cookie_value: "10083233.1432828147.6.5.utmcsr=newsletter|ut" +
 	                          "mccn=20150527|utmcmd=newsletter-ef|utmctr=communi" +
 	                          "tycolleges|utmcct=programa",
-	            utmcsr: "newsletter",
-	            utmccn: "20150527",
-	            utmcmd: "newsletter-ef",
-	            utmctr: "communitycolleges",
-	            utmcct: "programa"
+	            source: "newsletter",
+	            name: "20150527",
+	            medium: "newsletter-ef",
+	            term: "communitycolleges",
+	            content: "programa"
 	          },
 	          {
-	            cookie_value: "utmz:63514687.1432831892.1.1.utmcsr=adwords_gereb" +
+	            cookie_value: "63514687.1432831892.1.1.utmcsr=adwords_gereb" +
 	                          "oletos1min5_22072014|utmgclid=CNjQrtjy5MUCFQYXHwo" +
 	                          "d7k0A8g|utmccn=(not set)|utmcmd=(not set)",
-	            utmcsr: "adwords_gereboletos1min5_22072014",
-	            utmgclid: "CNjQrtjy5MUCFQYXHwod7k0A8g",
-	            utmccn: "(not set)",
-	            utmcmd: "(not set)"
+	            source: "adwords_gereboletos1min5_22072014",
+	            name: "(not set)",
+	            medium: "cpc"
 	          }
 	        ]
 	      end
 
-	      let(:klass) { TrafficSourceParser::Result::Utmz }
+	      let(:klass) { TrafficSourceParser::Result::Campaign }
 
 	      it_behaves_like "returns the correct object with attributes"
 	  end
@@ -169,37 +168,37 @@ describe TrafficSourceParser do
       let(:sources) do
         [
           {
-            cookie_value: "campaign:utm_campaign=spring&utm_m" +
+            cookie_value: "utm_campaign=spring&utm_m" +
                           "edium=referral&utm_source=exampleblog",
-            utm_campaign: "spring" ,
-            utm_medium: "referral" ,
-            utm_source: "exampleblog"
+            name: "spring" ,
+            medium: "referral" ,
+            source: "exampleblog"
           },
           {
-            cookie_value: "campaign:utm_campaign=spring&utm_m" +
+            cookie_value: "utm_campaign=spring&utm_m" +
                           "edium=email&utm_source=newsletter1",
-            utm_campaign: "spring",
-            utm_medium: "email",
-            utm_source: "newsletter1"
+            name: "spring",
+            medium: "email",
+            source: "newsletter1"
           },
           {
-            cookie_value: "campaign:utm_campaign=spring&utm_m" +
+            cookie_value: "utm_campaign=spring&utm_m" +
                           "edium=email&utm_source=newsletter1&utm_content=to" +
                           "plink",
-            utm_campaign: "spring",
-            utm_medium: "email",
-            utm_source: "newsletter1",
-            utm_content: "toplink"
+            name: "spring",
+            medium: "email",
+            source: "newsletter1",
+            content: "toplink"
           },
           {
-            cookie_value: "campaign:utm_sour" +
+            cookie_value: "utm_sour" +
                           "ce=Self+Test+List&utm_campaign=c2994af7da-xunda_m" +
                           "other_campaign&utm_medium=email&utm_term=0_f85d50" +
                           "388c-c2994af7da-69634449",
-            utm_source: "Self+Test+List",
-            utm_campaign: "c2994af7da-xunda_mother_campaign",
-            utm_medium: "email",
-            utm_term: "0_f85d50388c-c2994af7da-69634449"
+            source: "Self+Test+List",
+            name: "c2994af7da-xunda_mother_campaign",
+            medium: "email",
+            term: "0_f85d50388c-c2994af7da-69634449"
 
           }
         ]
