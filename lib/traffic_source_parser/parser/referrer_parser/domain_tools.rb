@@ -1,4 +1,5 @@
 require 'public_suffix'
+require 'uri'
 
 module TrafficSourceParser
   module Parser
@@ -9,6 +10,10 @@ module TrafficSourceParser
         def referrer_regex(url)
           @url = url.dup
           Regexp.new(domain)
+        end
+
+        def valid?(domain)
+          domain =~ URI::regexp
         end
 
         private
