@@ -57,7 +57,7 @@ module TrafficSourceParser
       end
 
       def direct_source?
-        @referrer.empty? || !DomainTools.valid?(@referrer)
+        !DomainTools.valid?(@referrer)
       end
 
     end
