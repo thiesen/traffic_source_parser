@@ -18,7 +18,7 @@ module TrafficSourceParser
 
         def search_hash
           hash = basic_search_hash
-          hash.merge!(query: keywords) if keywords
+          hash.merge!(term: keywords) if keywords
           hash
         end
 
@@ -30,7 +30,7 @@ module TrafficSourceParser
         end
 
         def basic_search_hash
-          { source: @source }
+          { source: @source, medium: "organic" }
         end
 
       end
