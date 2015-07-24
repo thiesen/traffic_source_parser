@@ -50,23 +50,42 @@ describe TrafficSourceParser do
 
   		context "and isn't a recognized referrer" do
 
+          # source: domain (ajuda.rdstation.com.br)
+           # campaign: (referral)
+           # medium: referral
+           # content: /xunda
+
+
   			let(:sources) do
   				[
   					{
-  						cookie_value: "http://shipit.resultadosdigitais.com.br",
-  						source:  "http://shipit.resultadosdigitais.com.br"
+  						cookie_value: "http://shipit.resultadosdigitais.com.br/trabalhe-conosco/",
+  						source:  "shipit.resultadosdigitais.com.br",
+              medium: "referral",
+              campaign: "(referral)",
+              term: "/trabalhe-conosco/"
   					},
   					{
-  						cookie_value: "https://thoughtbot.com/",
-  						source:  "https://thoughtbot.com/"
+  						cookie_value: "https://thoughtbot.com/locations",
+  						source:  "thoughtbot.com",
+              medium: "referral",
+              campaign: "(referral)",
+              content: '/locations'
+
   					},
   					{
   						cookie_value: "https://rubygems.org/",
-  						source:  "https://rubygems.org/"
+  						source:  "rubygems.org",
+              medium: "referral",
+              campaign: "(referral)",
+
   					},
   					{
-  						cookie_value: "https://www.ruby-lang.org/",
-  						source:  "https://www.ruby-lang.org/"
+  						cookie_value: "https://www.ruby-lang.org/en/about/",
+  						source:  "www.ruby-lang.org",
+              medium: "referral",
+              campaign: "(referral)",
+              term: '/en/about/'
   					},
   				]
   			end
@@ -81,11 +100,26 @@ describe TrafficSourceParser do
 
 	      let(:sources) do
 	        [
-	          { cookie_value: "https://www.facebook.com/", source: "Facebook" },
-	          { cookie_value:  "http://t.co/W1pX6dNa2V", source: "Twitter" },
-	          { cookie_value: "https://www.linkedin.com/", source: "LinkedIn" },
-	          { cookie_value: "http://plus.url.google.com/url", source: "Google Plus" },
-	          { cookie_value: "https://www.pinterest.com/", source: "Pinterest" }
+	          {
+              cookie_value: "https://www.facebook.com/",
+              source: "Facebook", medium: "social"
+            },
+	          {
+              cookie_value:  "http://t.co/W1pX6dNa2V",
+              source: "Twitter", medium: "social"
+            },
+	          {
+              cookie_value: "https://www.linkedin.com/",
+              source: "LinkedIn", medium: "social"
+            },
+	          {
+              cookie_value: "http://plus.url.google.com/url",
+              source: "Google Plus", medium: "social"
+            },
+	          {
+              cookie_value: "https://www.pinterest.com/",
+              source: "Pinterest", medium: "social"
+            }
 	        ]
 	      end
 
@@ -99,16 +133,26 @@ describe TrafficSourceParser do
 
         let(:sources) do
           [
-            { cookie_value: "http://r.search.yahoo.com/_ylt=AwrBTv5RjZpVbJ8A" +
+            {
+              cookie_value: "http://r.search.yahoo.com/_ylt=AwrBTv5RjZpVbJ8A" +
                             "J23z6Qt.;_ylu=X3oDMTE0MjJuYj…2fshipit.resultado" +
                             "sdigitais.com.br%2f/RK=0/RS=Y_bOYZ72hkyElUK0URY" +
-                            "LlSFeQUo-", source: "Yahoo" },
-            { cookie_value: "http://www.bing.com/search?q=shipit+resultados" +
+                            "LlSFeQUo-",
+              source: "Yahoo",
+              medium: "organic"
+            },
+            {
+              cookie_value: "http://www.bing.com/search?q=shipit+resultados" +
                             "+digitais&go=Submit&qs=n&form…esultados+digita" +
                             "is&sc=1-27&sp=-1&sk=&cvid=df2f6cabe2d343e9ab98" +
-                            "d90a98fcc5c5", source: "Bing", query: "shipit " +
-                            "resultados digitais" },
-            { cookie_value: "https://www.google.com.br/", source: "Google" },
+                            "d90a98fcc5c5",
+              source: "Bing", term: "shipit resultados digitais",
+              medium: "organic" },
+            {
+              cookie_value: "https://www.google.com.br/",
+              source: "Google",
+              medium: "organic"
+            },
           ]
         end
 
