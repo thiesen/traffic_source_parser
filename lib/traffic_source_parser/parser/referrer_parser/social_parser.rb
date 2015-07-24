@@ -12,7 +12,7 @@ module TrafficSourceParser
           end
 
           def social_hash
-            {source: @source }
+            { source: @source, medium: "social" }
           end
 
       end
