@@ -21,16 +21,10 @@ describe TrafficSourceParser do
 
   describe ".parse" do
 
-    context "when cookie value is empty or (none)" do
+    context "when cookie value is (none)" do
 
       let(:sources) do
         [
-          {
-            cookie_value: "",
-            source: "(direct)",
-            campaign: "(direct)",
-            medium: "(none)"
-          },
           {
             cookie_value: "(none)",
             source: "(direct)",
@@ -43,6 +37,14 @@ describe TrafficSourceParser do
       let(:klass) {  TrafficSourceParser::Result::Direct }
 
       it_behaves_like "returns the correct object with attributes"
+
+    end
+
+    context "when cookie value is empty" do
+
+      it "returns nothing" do
+        expect(TrafficSourceParser.parse('')).not_to be
+      end
 
     end
 
