@@ -60,7 +60,7 @@ describe TrafficSourceParser do
   				[
   					{
   						cookie_value: "http://shipit.resultadosdigitais.com.br/trabalhe-conosco/",
-  						source:  "shipit.resultadosdigitais.com.br",
+  						source:  "resultadosdigitais.com.br",
               medium: "referral",
               campaign: "(referral)",
               term: "/trabalhe-conosco/"
@@ -70,7 +70,7 @@ describe TrafficSourceParser do
   						source:  "thoughtbot.com",
               medium: "referral",
               campaign: "(referral)",
-              content: '/locations'
+              term: '/locations'
 
   					},
   					{
@@ -82,7 +82,7 @@ describe TrafficSourceParser do
   					},
   					{
   						cookie_value: "https://www.ruby-lang.org/en/about/",
-  						source:  "www.ruby-lang.org",
+  						source:  "ruby-lang.org",
               medium: "referral",
               campaign: "(referral)",
               term: '/en/about/'
