@@ -5,9 +5,8 @@ module TrafficSourceParser
 
     class Generic < OpenStruct
 
-      def initialize(ref)
-        source = ref.empty? ? "(none)" : ref
-        super(source: source)
+      def initialize(source_hash)
+        super(source_hash)
       end
 
     end
