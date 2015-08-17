@@ -9,7 +9,7 @@ module TrafficSourceParser
   end
 
   def parse(cookie_value)
-    Parser.create cookie_value unless cookie_value.empty?
+    Parser.create cookie_value
   end
 
 end

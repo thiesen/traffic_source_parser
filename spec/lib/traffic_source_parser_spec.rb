@@ -42,9 +42,39 @@ describe TrafficSourceParser do
 
     context "when cookie value is empty" do
 
-      it "returns nothing" do
-        expect(TrafficSourceParser.parse('')).not_to be
+      let(:sources) do
+        [
+          {
+            cookie_value: '',
+            source: "unknown",
+            campaign: "unknown",
+            medium: "unknown"
+          }
+        ]
       end
+
+      let(:klass) {  TrafficSourceParser::Result::Unknown }
+
+      it_behaves_like "returns the correct object with attributes"
+
+    end
+
+    context "when cookie value is nil" do
+
+      let(:sources) do
+        [
+          {
+            cookie_value: nil,
+            source: "unknown",
+            campaign: "unknown",
+            medium: "unknown"
+          }
+        ]
+      end
+
+      let(:klass) {  TrafficSourceParser::Result::Unknown }
+
+      it_behaves_like "returns the correct object with attributes"
 
     end
 
