@@ -25,7 +25,7 @@ module TrafficSourceParser
       end
 
       def campaign_params_mapper
-        @campaign_params ||= YAML::load_file(File.join(TrafficSourceParser.config_path, 'campaign_params.yml'))
+        @campaign_params ||= load_config('campaign_params.yml')
       end
 
     end
