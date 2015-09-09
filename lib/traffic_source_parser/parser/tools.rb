@@ -9,7 +9,7 @@ module TrafficSourceParser
 
       def parse_params(params_array)
         params_array.map { |param| param.split('=') }.
-        delete_if { |params| params.size != 2 }
+        delete_if { |params| params.size != 2 }.to_h
       end
 
       def translate_keys(hash, mapper)

@@ -17,11 +17,15 @@ module TrafficSourceParser
       end
 
       def parsed_utmz_params
-        parse_params(utmz_params).to_h
+        parse_params(utmz_params)
       end
 
       def utmz_hash
-        translate_keys(parsed_utmz_params, utmz_params_mapper)
+        translated_utmz_hash = translate_keys(parsed_utmz_params, utmz_params_mapper)
+        if translated_utmz_hash.delete("utmgclid")
+          translated_utmz_hash["medium"] = "cpc"
+        end
+        translated_utmz_hash
       end
 
       def utmz_params_mapper
