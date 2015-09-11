@@ -24,14 +24,16 @@ module TrafficSourceParser
         OTHER_ADVERTISING    = "Other Advertising"
         ORGANIC              = "Organic Search"
         PAID                 = "Paid Search"
+        DIRECT               = "Direct"
         OTHER                = "Other"
+        UNKNOWN              = "Unknown"
       end
-
 
       def define_channel(traffic_source)
         return Types::OTHER_ADVERTISING if other_advertising?(traffic_source)
         return Types::REFERRAL if referral?(traffic_source)
         return Types::DISPLAY if display?(traffic_source)
+        return Types::DIRECT if direct?(traffic_source)
         return Types::ORGANIC if organic?(traffic_source)
         return Types::PAID if paid?(traffic_source)
         return Types::EMAIL if email?(traffic_source)
@@ -72,7 +74,7 @@ module TrafficSourceParser
 
       # Traffic from any of approximately 400 social networks (that are not tagged as ads).
       def social?(traffic_source)
-        traffic_source.medium =~ MediumRegex::SOCIAL
+        traffic_source.medium =~ MediumRegex::SOCIAL ||  TrafficSourceParser::Parser::ReferrerParser.social_sources.grep(Regexp.new(traffic_source.source, /i/)).any?
       end
 
       # Traffic from unpaid search on any search engine (i.e., medium="organic").

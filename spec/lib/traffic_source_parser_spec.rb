@@ -243,7 +243,7 @@ describe TrafficSourceParser do
 	                          "media-fe",
 	            source: "facebook.com",
 	            campaign: "20150528-ef-aprovacaoharvard",
-              channel: "Referral",
+              channel: "Social",
 	            medium: "socialmedia-fe"
 	          },
 	          {
