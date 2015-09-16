@@ -2,6 +2,7 @@ require 'traffic_source_parser/parser/referrer_parser/domain_tools'
 require 'traffic_source_parser/parser/referrer_parser/social_parser'
 require 'traffic_source_parser/parser/referrer_parser/search_parser'
 require 'traffic_source_parser/parser/referrer_parser/generic_parser'
+require 'traffic_source_parser/parser/tools'
 require 'traffic_source_parser/result/direct'
 require 'traffic_source_parser/result/unknown'
 require 'yaml'
@@ -10,6 +11,7 @@ module TrafficSourceParser
   module Parser
     module ReferrerParser
       extend self
+      extend Tools
 
       # TODO - worst module ever...REFACTOR
 
@@ -54,8 +56,16 @@ module TrafficSourceParser
         referrer_data
       end
 
+      def social_sources
+        referrers_list.select {|x,y| y["type"] == "social" }.map {|x,y| y["source"] }
+      end
+
+      def search_sources
+        referrers_list.select {|x,y| y["type"] == "search" }.map {|x,y| y["source"] }
+      end
+
       def referrers_list
-        @sources_lists ||= YAML::load_file(File.join(TrafficSourceParser.config_path, 'referrers.yml'))
+        @sources_lists ||= load_config('referrers.yml')
       end
 
       def unknown_source?
