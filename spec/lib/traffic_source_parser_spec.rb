@@ -266,7 +266,7 @@ describe TrafficSourceParser do
 	        ]
 	      end
 
-	      let(:klass) { TrafficSourceParser::Result::Campaign }
+	      let(:klass) { TrafficSourceParser::Result::Utmz }
 
 	      it_behaves_like "returns the correct object with attributes"
 	  end
