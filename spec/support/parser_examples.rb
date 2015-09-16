@@ -13,7 +13,6 @@ shared_examples_for 'a traffic source campaign parser' do
   end
 
   it 'should have channel correctly set' do
-    puts subject
     expect(subject.channel).to eq channel
   end
 
