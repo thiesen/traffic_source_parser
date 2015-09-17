@@ -1,7 +1,8 @@
-require 'traffic_source_parser/parser/referrer_parser/domain_tools'
-require 'traffic_source_parser/parser/referrer_parser/social_parser'
-require 'traffic_source_parser/parser/referrer_parser/search_parser'
-require 'traffic_source_parser/parser/referrer_parser/generic_parser'
+require 'traffic_source_parser/referrer_parser/domain_tools'
+require 'traffic_source_parser/referrer_parser/social_parser'
+require 'traffic_source_parser/referrer_parser/search_parser'
+require 'traffic_source_parser/referrer_parser/generic_parser'
+require 'traffic_source_parser/tools'
 require 'traffic_source_parser/result/direct'
 require 'traffic_source_parser/result/unknown'
 require 'yaml'
@@ -10,6 +11,7 @@ module TrafficSourceParser
   module Parser
     module ReferrerParser
       extend self
+      extend Tools
 
       # TODO - worst module ever...REFACTOR
 
@@ -49,13 +51,21 @@ module TrafficSourceParser
 
       def params_for_referrer
         _, referrer_data = referrers_list.find do |referrer, referrer_hash|
-          referrer =~ referrer_regex
+          referrer == DomainTools.clear_domain(@referrer.dup) || referrer == referrer_domain
         end
         referrer_data
       end
 
+      def social_sources
+        referrers_list.select {|x,y| y["type"] == "social" }.collect(&:first) #map {|x,y| x }
+      end
+
+      def search_sources
+        referrers_list.select {|x,y| y["type"] == "search" }.collect(&:first) #map {|x,y| x }
+      end
+
       def referrers_list
-        @sources_lists ||= YAML::load_file(File.join(TrafficSourceParser.config_path, 'referrers.yml'))
+        @sources_lists ||= load_config('referrers.yml')
       end
 
       def unknown_source?

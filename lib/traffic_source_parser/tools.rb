@@ -16,7 +16,7 @@ module TrafficSourceParser
         translated_hash = {}
         hash.each do |key, value|
           translated_key = mapper[key] || key
-          translated_hash[translated_key] = URI.unescape(value)
+          translated_hash[translated_key.to_sym] = URI.unescape(value)
         end
         translated_hash
       end

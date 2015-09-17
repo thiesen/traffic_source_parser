@@ -1,4 +1,4 @@
-require 'traffic_source_parser/parser/referrer_parser/domain_tools'
+require 'traffic_source_parser/referrer_parser/domain_tools'
 require 'traffic_source_parser/result/generic'
 
 module TrafficSourceParser

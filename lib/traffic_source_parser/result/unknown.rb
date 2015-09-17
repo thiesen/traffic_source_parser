@@ -1,9 +1,9 @@
-require 'ostruct'
+require 'traffic_source_parser/result/generic'
 
 module TrafficSourceParser
   module Result
 
-    class Unknown < OpenStruct
+    class Unknown < TrafficSourceParser::Result::Generic
 
       def initialize
         super(

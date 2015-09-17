@@ -29,6 +29,7 @@ describe TrafficSourceParser do
             cookie_value: "(none)",
             source: "(direct)",
             campaign: "(direct)",
+            channel: "Direct",
             medium: "(none)"
           }
         ]
@@ -48,6 +49,7 @@ describe TrafficSourceParser do
             cookie_value: '',
             source: "unknown",
             campaign: "unknown",
+            channel: "Unknown",
             medium: "unknown"
           }
         ]
@@ -67,6 +69,7 @@ describe TrafficSourceParser do
             cookie_value: nil,
             source: "unknown",
             campaign: "unknown",
+            channel: "Unknown",
             medium: "unknown"
           }
         ]
@@ -84,6 +87,7 @@ describe TrafficSourceParser do
 
           # source: domain (ajuda.rdstation.com.br)
            # campaign: (referral)
+           # channel: "Referral",
            # medium: referral
            # content: /xunda
 
@@ -95,6 +99,7 @@ describe TrafficSourceParser do
   						source:  "resultadosdigitais.com.br",
               medium: "referral",
               campaign: "(referral)",
+              channel: "Referral",
               term: "/trabalhe-conosco/"
   					},
   					{
@@ -102,6 +107,7 @@ describe TrafficSourceParser do
   						source:  "thoughtbot.com",
               medium: "referral",
               campaign: "(referral)",
+              channel: "Referral",
               term: '/locations'
 
   					},
@@ -110,6 +116,7 @@ describe TrafficSourceParser do
   						source:  "rubygems.org",
               medium: "referral",
               campaign: "(referral)",
+              channel: "Referral",
 
   					},
   					{
@@ -117,6 +124,7 @@ describe TrafficSourceParser do
   						source:  "ruby-lang.org",
               medium: "referral",
               campaign: "(referral)",
+              channel: "Referral",
               term: '/en/about/'
   					},
   				]
@@ -134,23 +142,33 @@ describe TrafficSourceParser do
 	        [
 	          {
               cookie_value: "https://www.facebook.com/",
-              source: "Facebook", medium: "social"
+              source: "Facebook",
+              medium: "social",
+              channel: "Social"
             },
 	          {
               cookie_value:  "http://t.co/W1pX6dNa2V",
-              source: "Twitter", medium: "social"
+              source: "Twitter",
+              medium: "social",
+              channel: "Social"
             },
 	          {
               cookie_value: "https://www.linkedin.com/",
-              source: "LinkedIn", medium: "social"
+              source: "LinkedIn",
+              medium: "social",
+              channel: "Social"
             },
 	          {
               cookie_value: "http://plus.url.google.com/url",
-              source: "Google Plus", medium: "social"
+              source: "Google Plus",
+              medium: "social",
+              channel: "Social"
             },
 	          {
               cookie_value: "https://www.pinterest.com/",
-              source: "Pinterest", medium: "social"
+              source: "Pinterest",
+              medium: "social",
+              channel: "Social"
             }
 	        ]
 	      end
@@ -171,7 +189,8 @@ describe TrafficSourceParser do
                             "sdigitais.com.br%2f/RK=0/RS=Y_bOYZ72hkyElUK0URY" +
                             "LlSFeQUo-",
               source: "Yahoo",
-              medium: "organic"
+              medium: "organic",
+              channel: "Organic Search"
             },
             {
               cookie_value: "http://www.bing.com/search?q=shipit+resultados" +
@@ -179,11 +198,13 @@ describe TrafficSourceParser do
                             "is&sc=1-27&sp=-1&sk=&cvid=df2f6cabe2d343e9ab98" +
                             "d90a98fcc5c5",
               source: "Bing", term: "shipit resultados digitais",
-              medium: "organic" },
+              medium: "organic",
+              channel: "Organic Search" },
             {
               cookie_value: "https://www.google.com.br/",
               source: "Google",
-              medium: "organic"
+              medium: "organic",
+              channel: "Organic Search"
             },
           ]
         end
@@ -195,129 +216,6 @@ describe TrafficSourceParser do
       end
     end
 
-	    context "when source is utmz" do
-
-	      let(:sources) do
-	        [
-	          {
-	            cookie_value: "256172697.1432831709.1.1.utmcsr=(direct)|utm" +
-	                          "ccn=(direct)|utmcmd=(none)",
-	            source: "(direct)",
-	            campaign: "(direct)",
-	            medium: "(none)"
-	          },
-	          {
-	            cookie_value: "231152653.1432828491.1.1.utmcsr=t.co|utmccn" +
-	                          "=(referral)|utmcmd=referral|utmcct=/EFzCFawFrk",
-	            source: "t.co",
-	            campaign: "(referral)",
-	            medium: "referral",
-	            content: "/EFzCFawFrk"
-	          },
-	          {
-	            cookie_value: "10083233.1432828099.1.1.utmcsr=facebook.com|" +
-	                          "utmccn=20150528-ef-aprovacaoharvard|utmcmd=social" +
-	                          "media-fe",
-	            source: "facebook.com",
-	            campaign: "20150528-ef-aprovacaoharvard",
-	            medium: "socialmedia-fe"
-	          },
-	          {
-	            cookie_value: "153788330.1432828657.1.1.utmcsr=(direct)|utm" +
-	                          "ccn=(direct)|utmcmd=(none)",
-	            source: "(direct)",
-	            campaign: "(direct)",
-	            medium: "(none)"
-	          },
-	          {
-	            cookie_value: "210677130.1432831711.1.1.utmcsr=rakuten|utmc" +
-	                          "cn=linkshare|utmcmd=(not set)",
-	            source: "rakuten",
-	            campaign: "linkshare",
-	            medium: "(not set)"
-	          },
-	          {
-	            cookie_value: "10083233.1432828147.6.5.utmcsr=newsletter|ut" +
-	                          "mccn=20150527|utmcmd=newsletter-ef|utmctr=communi" +
-	                          "tycolleges|utmcct=programa",
-	            source: "newsletter",
-	            campaign: "20150527",
-	            medium: "newsletter-ef",
-	            term: "communitycolleges",
-	            content: "programa"
-	          },
-	          {
-	            cookie_value: "63514687.1432831892.1.1.utmcsr=adwords_gereb" +
-	                          "oletos1min5_22072014|utmgclid=CNjQrtjy5MUCFQYXHwo" +
-	                          "d7k0A8g|utmccn=(not set)|utmcmd=(not set)",
-	            source: "adwords_gereboletos1min5_22072014",
-	            campaign: "(not set)",
-	            medium: "cpc"
-	          },
-            {
-              cookie_value: "1.1111111111.1.1.utmcsr=facebook|utmccn=experim" +
-                            "entar-ferramenta|utmcmd=sponsored-post|utmctr=|" +
-                            "utmcct=organize-seus-negocios",
-              source: "facebook",
-              campaign: "experimentar-ferramenta",
-              medium: "sponsored-post",
-              content: "organize-seus-negocios"
-            }
-	        ]
-	      end
-
-	      let(:klass) { TrafficSourceParser::Result::Utmz }
-
-	      it_behaves_like "returns the correct object with attributes"
-	  end
-
-    end
-
-    context "when source is campaign" do
-
-      let(:sources) do
-        [
-          {
-            cookie_value: "utm_campaign=spring&utm_m" +
-                          "edium=referral&utm_source=exampleblog",
-            campaign: "spring" ,
-            medium: "referral" ,
-            source: "exampleblog"
-          },
-          {
-            cookie_value: "utm_campaign=spring&utm_m" +
-                          "edium=email&utm_source=newsletter1",
-            campaign: "spring",
-            medium: "email",
-            source: "newsletter1"
-          },
-          {
-            cookie_value: "utm_campaign=spring&utm_m" +
-                          "edium=email&utm_source=newsletter1&utm_content=to" +
-                          "plink",
-            campaign: "spring",
-            medium: "email",
-            source: "newsletter1",
-            content: "toplink"
-          },
-          {
-            cookie_value: "utm_sour" +
-                          "ce=Self+Test+List&utm_campaign=c2994af7da-xunda_m" +
-                          "other_campaign&utm_medium=email&utm_term=0_f85d50" +
-                          "388c-c2994af7da-69634449",
-            source: "Self+Test+List",
-            campaign: "c2994af7da-xunda_mother_campaign",
-            medium: "email",
-            term: "0_f85d50388c-c2994af7da-69634449"
-
-          }
-        ]
-      end
-
-      let(:klass) { TrafficSourceParser::Result::Campaign }
-
-      it_behaves_like "returns the correct object with attributes"
-
-    end
+  end
 
 end
