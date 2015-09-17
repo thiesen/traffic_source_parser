@@ -51,17 +51,17 @@ module TrafficSourceParser
 
       def params_for_referrer
         _, referrer_data = referrers_list.find do |referrer, referrer_hash|
-          referrer =~ referrer_regex
+          referrer == referrer_domain
         end
         referrer_data
       end
 
       def social_sources
-        referrers_list.select {|x,y| y["type"] == "social" }.map {|x,y| y["source"] }
+        referrers_list.select {|x,y| y["type"] == "social" }.collect(&:first) #map {|x,y| x }
       end
 
       def search_sources
-        referrers_list.select {|x,y| y["type"] == "search" }.map {|x,y| y["source"] }
+        referrers_list.select {|x,y| y["type"] == "search" }.collect(&:first) #map {|x,y| x }
       end
 
       def referrers_list

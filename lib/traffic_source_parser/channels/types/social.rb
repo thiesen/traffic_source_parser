@@ -14,7 +14,7 @@ module TrafficSourceParser
 
           # Traffic from any of approximately 400 social networks (that are not tagged as ads).
           def match_source?(traffic_source)
-            traffic_source[:medium] =~ SOCIAL_REGEX || TrafficSourceParser::Parser::ReferrerParser.social_sources.grep(Regexp.new(traffic_source[:source], /i/)).any?
+            traffic_source[:medium] =~ SOCIAL_REGEX || TrafficSourceParser::Parser::ReferrerParser.social_sources.include?(traffic_source[:source].downcase)
           end
 
       end
