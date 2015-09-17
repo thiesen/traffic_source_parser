@@ -51,7 +51,7 @@ module TrafficSourceParser
 
       def params_for_referrer
         _, referrer_data = referrers_list.find do |referrer, referrer_hash|
-          referrer == referrer_domain
+          referrer == DomainTools.clear_domain(@referrer.dup) || referrer == referrer_domain
         end
         referrer_data
       end
