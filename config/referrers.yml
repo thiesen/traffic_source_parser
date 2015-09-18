@@ -1,6 +1,9 @@
 facebook.com:
   source: Facebook
   type: social
+facebook:
+  source: Facebook
+  type: social
 fb.me:
   source: Facebook
   type: social
@@ -66,6 +69,9 @@ classmates.com:
   type: social
 github.com:
   source: Github
+  type: social
+plus.url.google.com:
+  source: Google Plus
   type: social
 url.google.com:
   source: Google Plus
@@ -1081,6 +1087,12 @@ search.iminent.com:
 utorrent.inspsearch.com:
   source: InfoSpace
   type: search
+yahoo.com:
+  source: Yahoo
+  type: search
 search.yahoo.com:
+  source: Yahoo
+  type: search
+r.search.yahoo.com:
   source: Yahoo
   type: search

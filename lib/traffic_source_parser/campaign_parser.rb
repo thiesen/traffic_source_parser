@@ -1,4 +1,4 @@
-require 'traffic_source_parser/parser/tools'
+require 'traffic_source_parser/tools'
 require 'traffic_source_parser/result/campaign'
 
 module TrafficSourceParser
@@ -6,6 +6,10 @@ module TrafficSourceParser
     module CampaignParser
       extend self
       extend Tools
+
+      def match_cookie_value?(value)
+        value =~ /utm_source|utm_medium|utm_term|utm_content|utm_campaign/
+      end
 
       def parse(campaign_query)
         @campaign_query = campaign_query
