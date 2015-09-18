@@ -1,6 +1,7 @@
 # https://support.google.com/analytics/answer/1191184?hl=en
 # https://support.google.com/analytics/answer/3297892?hl=en
-Dir['./lib/traffic_source_parser/channels/types/*.rb'].each {|f| require f}
+require 'traffic_source_parser/channels/types'
+
 
 module TrafficSourceParser
   module Channels
