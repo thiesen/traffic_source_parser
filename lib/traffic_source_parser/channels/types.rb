@@ -1,4 +1,3 @@
-# Dir['./lib/traffic_source_parser/channels/types/*.rb'].each {|f| require f}
 require 'traffic_source_parser/channels/types/direct'
 require 'traffic_source_parser/channels/types/display'
 require 'traffic_source_parser/channels/types/email'
