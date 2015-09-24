@@ -7,7 +7,7 @@ module TrafficSourceParser
         extend self
 
           def channel_name
-            'Other'
+            '(Other)'
           end
 
       end
