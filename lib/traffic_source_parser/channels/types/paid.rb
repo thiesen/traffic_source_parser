@@ -18,7 +18,7 @@ module TrafficSourceParser
           end
 
           def utmgclid?(traffic_source)
-            traffic_source[:utmgclid].present?
+            !traffic_source[:utmgclid].nil?
           end
 
       end
