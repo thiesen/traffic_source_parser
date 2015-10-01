@@ -22,14 +22,18 @@ module TrafficSourceParser
 
       def parse(referrer)
         @referrer = referrer
-        return  TrafficSourceParser::Result::Unknown.new if unknown_source?
         return  TrafficSourceParser::Result::Direct.new if direct_source?
+        return  TrafficSourceParser::Result::Unknown.new if unknown_source?
         referrer_parser.result(@referrer, referrer_source)
       end
 
       def referrer_parser
         return  GenericParser unless params_for_referrer
         REFERRER_PARSERS[referrer_type]
+      end
+
+      def invalid_referrer?
+        !DomainTools.valid?(@referrer)
       end
 
       def referrer_type
@@ -69,11 +73,11 @@ module TrafficSourceParser
       end
 
       def unknown_source?
-        @referrer.nil? || @referrer.empty?
+        @referrer.nil? || @referrer.empty? || invalid_referrer?
       end
 
       def direct_source?
-        !DomainTools.valid?(@referrer)
+        @referrer == "(none)"
       end
 
     end

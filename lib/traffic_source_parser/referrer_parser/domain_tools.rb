@@ -10,8 +10,8 @@ module TrafficSourceParser
         URL_CONTENT_REGEX = /\/.*$/
         URL_PROTOCOL_DOMAIN = /.*?:\/\//
 
-        def valid?(domain)
-          domain =~ URI::regexp
+        def valid?(url)
+          PublicSuffix.valid?(clear_domain(url))
         end
 
         def url_content(url)
