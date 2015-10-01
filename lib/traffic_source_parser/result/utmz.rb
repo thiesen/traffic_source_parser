@@ -10,16 +10,6 @@ module TrafficSourceParser
         self[:source] = get_known_source(utmz_hash) if use_known_sources?(utmz_hash)
       end
 
-      private
-
-      def use_known_sources?(utmz_hash)
-        TrafficSourceParser::Parser::ReferrerParser.referrers_list.has_key?(utmz_hash[:source])
-      end
-
-      def get_known_source(utmz_hash)
-        TrafficSourceParser::Parser::ReferrerParser.referrers_list[utmz_hash[:source]]['source']
-      end
-
     end
   end
 end
