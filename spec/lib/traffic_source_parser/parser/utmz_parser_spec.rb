@@ -25,7 +25,7 @@ describe TrafficSourceParser::Parser::UtmzParser do
           let(:campaign) { '(referral)' }
           let(:medium) { 'referral' }
           let(:channel) { 'Social' }
-          let(:source) { 't.co' }
+          let(:source) { 'Twitter' }
           let(:content) { '/EFzCFawFrk' }
 
           it_behaves_like 'a traffic source campaign parser with content'
@@ -36,7 +36,7 @@ describe TrafficSourceParser::Parser::UtmzParser do
           let(:campaign) { 'experimentar-ferramenta' }
           let(:medium) { 'sponsored-post' }
           let(:channel) { 'Social' }
-          let(:source) { 'facebook' }
+          let(:source) { 'Facebook' }
           let(:content) { 'organize-seus-negocios' }
 
           it_behaves_like 'a traffic source campaign parser with content'
@@ -47,7 +47,7 @@ describe TrafficSourceParser::Parser::UtmzParser do
           let(:campaign) { '20150528-ef-aprovacaoharvard' }
           let(:medium) { 'socialmedia-fe' }
           let(:channel) { 'Social' }
-          let(:source) { 'facebook.com' }
+          let(:source) { 'Facebook' }
 
           it_behaves_like 'a traffic source campaign parser'
         end
