@@ -16,6 +16,16 @@ describe TrafficSourceParser::Parser::CampaignParser do
       it_behaves_like 'a traffic source campaign parser'
     end
 
+    context 'when value is from ppc but source is social' do
+      let(:cookie) { 'utm_source=facebook&utm_medium=ppc&utm_campaign=fb_retargeting_1' }
+      let(:campaign) { 'fb_retargeting_1' }
+      let(:medium) { 'ppc' }
+      let(:channel) { 'Social' }
+      let(:source) { 'Facebook' }
+
+      it_behaves_like 'a traffic source campaign parser'
+    end
+
     context 'when value is from email' do
       let(:cookie) { 'utm_campaign=spring&utm_medium=email&utm_source=newsletter1' }
       let(:campaign) { 'spring' }

@@ -12,6 +12,16 @@ module TrafficSourceParser
         )
       end
 
+      private
+
+      def use_known_sources?(source_hash)
+        TrafficSourceParser::Parser::ReferrerParser.referrers_list.has_key?(source_hash[:source])
+      end
+
+      def get_known_source(source_hash)
+        TrafficSourceParser::Parser::ReferrerParser.referrers_list[source_hash[:source]]['source']
+      end
+
     end
   end
 end
