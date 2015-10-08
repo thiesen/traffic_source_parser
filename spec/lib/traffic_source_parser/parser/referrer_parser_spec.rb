@@ -201,7 +201,21 @@ describe TrafficSourceParser::Parser::ReferrerParser do
                                     source: "Google",
                                     medium: "organic",
                                     channel: "Organic Search"
-                                    },
+                                  },
+                                  {
+                                    cookie_value: "http://www.google.com.br/aclk?sa=L&ai=CpAvNEJYNVo2ZCs2CxgT08bso0PC4mAag_PCc…wnfiMosgCFciNkAodhxAKxQ",
+                                    source: "Google",
+                                    medium: "cpc",
+                                    channel: "Paid Search"
+                                  },
+                                  {
+                                    cookie_value: "https://br.search.yahoo.com/search?p=cerveja&fr=yfp-t-204",
+                                    source: "Yahoo",
+                                    medium: "cpc",
+                                    channel: "Paid Search",
+                                    term: "cerveja"
+                                  }
+
                                   ]
                                 end
 
