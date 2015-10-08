@@ -6,10 +6,10 @@ module TrafficSourceParser
 
     class Search < TrafficSourceParser::Result::Generic
 
-    PAID_TERM = {
-      "Yahoo" => /search\?p=/,
-      "Google" => /aclk\?/,
-    }
+      PAID_TERM = {
+        "Yahoo" => /search\?p=/,
+        "Google" => /aclk\?/,
+      }
 
       def initialize(search_hash, referrer)
         super(search_hash)
