@@ -8,17 +8,19 @@ module TrafficSourceParser
 
         QUERY = {
           "Bing" => /search\?q=(.*?)&/,
+          "Yahoo" => /search\?p=(.*?)&/,
         }
 
         def result(referrer, source)
           @referrer = referrer
           @source = source
-          TrafficSourceParser::Result::Search.new(search_hash)
+          TrafficSourceParser::Result::Search.new(search_hash, @referrer)
         end
 
         def search_hash
           hash = basic_search_hash
           hash.merge!(term: keywords) if keywords
+
           hash
         end
 
