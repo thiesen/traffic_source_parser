@@ -31,6 +31,9 @@ renren.com:
 login.live.com:
   source: Windows Live Spaces
   type: social
+lnkd.in:
+  source: LinkedIn
+  type: social
 linkedin.com:
   source: LinkedIn
   type: social
