@@ -1,6 +1,12 @@
 facebook.com:
   source: Facebook
   type: social
+m.facebook.com:
+  source: Facebook
+  type: social
+l.facebook.com:
+  source: Facebook
+  type: social
 facebook:
   source: Facebook
   type: social
