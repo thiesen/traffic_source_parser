@@ -7,6 +7,9 @@ m.facebook.com:
 l.facebook.com:
   source: Facebook
   type: social
+lm.facebook.com:
+  source: Facebook
+  type: social
 facebook:
   source: Facebook
   type: social
