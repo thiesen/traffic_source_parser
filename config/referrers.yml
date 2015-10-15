@@ -1,6 +1,15 @@
 facebook.com:
   source: Facebook
   type: social
+m.facebook.com:
+  source: Facebook
+  type: social
+l.facebook.com:
+  source: Facebook
+  type: social
+lm.facebook.com:
+  source: Facebook
+  type: social
 facebook:
   source: Facebook
   type: social
@@ -24,6 +33,9 @@ renren.com:
   type: social
 login.live.com:
   source: Windows Live Spaces
+  type: social
+lnkd.in:
+  source: LinkedIn
   type: social
 linkedin.com:
   source: LinkedIn
