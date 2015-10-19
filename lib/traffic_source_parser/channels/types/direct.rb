@@ -12,7 +12,7 @@ module TrafficSourceParser
 
           # Sessions in which the user typed the name of your website URL into the browser or came to your site via a bookmark (i.e., source="(direct)" and medium="(not set)" or "(none)").
           def match_source?(traffic_source)
-            (traffic_source[:medium] == '(not set)' && traffic_source[:source] =~ /direct/i) || traffic_source[:medium] == '(none)'
+            (traffic_source[:medium] == '(not set)' && traffic_source[:source] =~ /^\(direct\)$/i) || traffic_source[:medium] == '(none)'
           end
 
       end
