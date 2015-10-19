@@ -7,7 +7,7 @@ module TrafficSourceParser
       def initialize(campaign_hash)
         super(campaign_hash)
 
-        self[:source] = get_known_source(campaign_hash) if use_known_sources?(campaign_hash)
+        self[:source] = get_known_source(campaign_hash)
       end
 
     end

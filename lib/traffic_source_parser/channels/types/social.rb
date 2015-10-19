@@ -19,7 +19,12 @@ module TrafficSourceParser
 
           def known_social?(source)
             return false unless source
-            TrafficSourceParser::Parser::ReferrerParser.social_sources.include?(source.downcase)
+            known_social_sources.each{ |k, v| return k if source.downcase.match(v * '|') }
+            false
+          end
+
+          def known_social_sources
+            TrafficSourceParser::Parser::ReferrerParser.social_sources
           end
 
       end

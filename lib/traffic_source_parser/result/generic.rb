@@ -14,12 +14,13 @@ module TrafficSourceParser
 
       private
 
-      def use_known_sources?(source_hash)
-        TrafficSourceParser::Parser::ReferrerParser.referrers_list.has_key?(source_hash[:source])
+      def get_known_source(source_hash)
+        referrers_list.values.each{|h| h.each{|k, v| return k if source.match(v * '|') }}
+        source
       end
 
-      def get_known_source(source_hash)
-        TrafficSourceParser::Parser::ReferrerParser.referrers_list[source_hash[:source]]['source']
+      def referrers_list
+        TrafficSourceParser::Parser::ReferrerParser.referrers_list
       end
 
     end
