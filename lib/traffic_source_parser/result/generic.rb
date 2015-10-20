@@ -14,7 +14,7 @@ module TrafficSourceParser
 
       private
 
-      def get_known_source(source_hash)
+      def get_known_source
         referrers_list.values.each{|h| h.each{|k, v| return k if source.match(v * '|') }}
         source
       end
