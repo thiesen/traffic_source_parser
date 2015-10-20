@@ -1,448 +1,470 @@
 social:
   Facebook:
-    - 'facebook'
-    - 'fb.me'
-  Qzone:
-    - 'qzone.qq.com'
-  Haboo:
-    - 'habbo.com'
-  Renren:
-    - 'renren.com'
-  Windows Live Spaces:
-    - 'login.live.com'
-  LinkedIn:
-    - 'lnkd.in'
-    - 'linkedin.com'
-  Bebo:
-    - 'bebo.com'
-  Vkontakte:
-    - 'vk.com'
-    - 'vkontakte.ru'
-  Tagged:
-    - 'login.tagged.com'
-  Orkut:
-    - 'orkut.com'
-  Myspace:
-    - 'myspace.com'
-  Friendster:
-    - 'friendster.com'
-  Badoo:
-    - 'badoo.com'
-  hi5:
-    - 'hi5.com'
-  Netlog:
-    - 'netlog.com'
-  Flixster:
-    - 'flixster.com'
-  MyLife:
-    - 'mylife.ru'
-  Classmates.com:
-    - 'classmates.com'
-  Github:
-    - 'github.com'
-  Google Plus:
-    - 'url.google.com'
-  douban:
-    - 'douban.com'
-  Odnoklassniki:
-    - 'odnoklassniki.ru'
-  Viadeo:
-    - 'viadeo.com'
-  Flickr:
-    - 'flickr.com'
-  WeeWorld:
-    - 'weeworld.com'
-  Last.fm:
-    - 'last.fm'
-    - 'lastfm.'
-  MyHeritage:
-    - 'myheritage.com'
-  Xanga:
-    - 'xanga.com'
-  Mixi:
-    - 'mixi.jp'
-  Cyworld:
-    - 'global.cyworld.com'
-  Gaia Online:
-    - 'gaiaonline.com'
-  Skyrock:
-    - 'skyrock.com'
-  BlackPlanet:
-    - 'blackplanet.com'
-  myYearbook:
-    - 'myyearbook.com'
-  Fotolog:
-    - 'fotolog.com'
-  Friends Reunited:
-    - 'friendsreunited.com'
-  LiveJournal:
-    - 'livejournal.'
-  StudiVZ:
-    - 'studivz.net'
-  MeinVZ:
-    - 'meinvz.net'
-  StackOverflow:
-    - 'stackoverflow.com'
-  Sonico.com:
-    - 'sonico.com'
-  Pinterest:
-    - 'pinterest.com'
-  Plaxo:
-    - 'plaxo.com'
-  Geni.com:
-    - 'geni.com'
-  Tuenti:
-    - 'tuenti.com'
-  XING:
-    - 'xing.com'
-  Taringa!:
-    - 'taringa.net'
-  Nasza-klasa.pl:
-    - 'nk.pl'
-  StumbleUpon:
-    - 'stumbleupon.com'
-  SourceForge:
-    - 'sourceforge.net'
-  Hyves:
-    - 'hyves.nl'
-  WAYN:
-    - 'wayn.com'
-  Buzznet:
-    - 'buzznet.com'
-  Multiply:
-    - 'multiply.com'
-  Foursquare:
-    - 'foursquare.com'
-  vkrugudruzei.ru:
-    - 'vkrugudruzei.ru'
-  my.mail.ru:
-    - 'my.mail.ru'
-  moikrug.ru:
-    - 'moikrug.ru'
-  reddit:
-    - 'reddit.com'
-  Hacker News:
-    - 'news.ycombinator.com'
-  identi.ca:
-    - 'identi.ca'
-  Weibo:
-    - 'weibo.com'
-    - 't.cn'
-  YouTube:
-    - 'youtube.com'
-    - 'youtu.be'
-  Vimeo:
-    - 'vimeo.com'
-  tumblr:
-    - 'tumblr.com'
+    - facebook
+    - fb.me
   Twitter:
-    - 'twitter.com'
-    - '^t.co$'
+    - twitter
+    - ^t.co
+  Qzone:
+    - qzone.qq.com
+  Haboo:
+    - habbo.com
+  Pocket:
+    - getpocket
+  Renren:
+    - renren.com
+  Windows Live Spaces:
+    - login.live.com
+  LinkedIn:
+    - lnkd.in
+    - linkedin.com
+  Bebo:
+    - bebo.com
+  Vkontakte:
+    - vk.com
+    - vkontakte.ru
+  Tagged:
+    - login.tagged.com
+  Orkut:
+    - orkut.com
+  Myspace:
+    - myspace.com
+  Friendster:
+    - friendster.com
+  Badoo:
+    - badoo.com
+  hi5:
+    - hi5.com
+  Netlog:
+    - netlog.com
+  Flixster:
+    - flixster.com
+  MyLife:
+    - mylife.ru
+  Classmates.com:
+    - classmates.com
+  Github:
+    - github.com
+  Google Plus:
+    - ((plus\.)|(url\.))google.com
+  douban:
+    - douban.com
+  Odnoklassniki:
+    - odnoklassniki.ru
+  Viadeo:
+    - viadeo.com
+  Flickr:
+    - flickr.com
+  WeeWorld:
+    - weeworld.com
+  Last.fm:
+    - last.fm
+    - lastfm.
+  MyHeritage:
+    - myheritage.com
+  Xanga:
+    - xanga.com
+  Mixi:
+    - mixi.jp
+  Cyworld:
+    - global.cyworld.com
+  Gaia Online:
+    - gaiaonline.com
+  Skyrock:
+    - skyrock.com
+  BlackPlanet:
+    - blackplanet.com
+  myYearbook:
+    - myyearbook.com
+  Fotolog:
+    - fotolog.com
+  Friends Reunited:
+    - friendsreunited.com
+  LiveJournal:
+    - livejournal.
+  StudiVZ:
+    - studivz.net
+  MeinVZ:
+    - meinvz.net
+  StackOverflow:
+    - stackoverflow.com
+  Sonico.com:
+    - sonico.com
+  Pinterest:
+    - pinterest.com
+  Plaxo:
+    - plaxo.com
+  Geni.com:
+    - geni.com
+  Tuenti:
+    - tuenti.com
+  XING:
+    - xing.com
+  Taringa!:
+    - taringa.net
+  Nasza-klasa.pl:
+    - nk.pl
+  StumbleUpon:
+    - stumbleupon
+  SourceForge:
+    - sourceforge.net
+  Hyves:
+    - hyves.nl
+  WAYN:
+    - wayn.com
+  Buzznet:
+    - buzznet.com
+  Multiply:
+    - multiply.com
+  Foursquare:
+    - foursquare.com
+  vkrugudruzei.ru:
+    - vkrugudruzei.ru
+  my.mail.ru:
+    - my.mail.ru
+  moikrug.ru:
+    - moikrug.ru
+  reddit:
+    - reddit.com
+  Hacker News:
+    - news.ycombinator.com
+  identi.ca:
+    - identi.ca
+  Weibo:
+    - weibo.com
+    - t.cn
+  YouTube:
+    - youtube.com
+    - youtu.be
+  Vimeo:
+    - vimeo.com
+  tumblr:
+    - tumblr.com
+  Pocket:
+    - getpocket
+  SlideShare:
+    - ^slideshare\.net
+  Meetup:
+    - meetup
+  Ning:
+    - api\.ning
+  Scoop.it:
+    - scoop\.it
+  Disqus:
+    - disqus
+  Wordpress:
+    - wordpress
+  paper.li:
+    - paper\.li
+  Blogger:
+    - blogspot
+  Digg:
+    - digg.com
+
+
 search:
   1.cz:
-    - '1.cz'
+    - 1.cz
   123people:
-    - 'www.123people.com'
+    - www.123people.com
   360search:
-    - 'so.360.cn'
+    - so.360.cn
   360search:
-    - 'www.so.com'
+    - www.so.com
   Abacho:
-    - '.abacho.'
+    - .abacho.
   ABCsøk:
-    - 'abcsok.no'
+    - abcsok.no
   ABCsøk:
-    - 'verden.abcsok.no'
+    - verden.abcsok.no
   Acoon:
-    - 'www.acoon.de'
+    - www.acoon.de
   Aguea:
-    - 'chercherfr.aguea.com'
+    - chercherfr.aguea.com
   Alexa:
-    - 'alexa.com'
-    - 'search.toolbars.alexa.com'
+    - alexa.com
+    - search.toolbars.alexa.com
   Alice Adsl:
-    - 'rechercher.aliceadsl.fr'
+    - rechercher.aliceadsl.fr
   Allesklar:
-    - 'www.allesklar.'
-    - 'www.allesklar.'
-    - 'www.allesklar.'
+    - www.allesklar.
+    - www.allesklar.
+    - www.allesklar.
   AllTheWeb:
-    - 'www.alltheweb.com'
+    - www.alltheweb.com
   All.by:
-    - 'all.by'
+    - all.by
   AltaVista:
-    - '.altavista.'
+    - .altavista.
   Apollo lv:
-    - 'apollo.lv/portal/search/'
+    - apollo.lv/portal/search/
   Apollo7:
-    - 'apollo7.de'
+    - apollo7.de
   AOL:
-    - '.aol.'
-    - 'suche.aolsvc.de'
-    - 'search-intl.netscape.com'
-    - 'de.aolsearch.com'
+    - .aol.
+    - suche.aolsvc.de
+    - search-intl.netscape.com
+    - de.aolsearch.com
   Aport:
-    - 'sm.aport.ru'
+    - sm.aport.ru
   Arama:
-    - 'arama.com'
+    - arama.com
   Arcor:
-    - 'www.arcor.de'
+    - www.arcor.de
   Arianna:
-    - 'arianna.libero.it'
+    - arianna.libero.it
   Arianna:
-    - 'www.arianna.com'
+    - www.arianna.com
   Ask:
-    - 'ask.com'
-    - 'www.askkids.com'
-    - 'www.qbyrd.com'
-    - '.search-results.com'
-    - 'searchqu.com'
-    - 'safesearch.avira.com'
+    - ask.com
+    - www.askkids.com
+    - www.qbyrd.com
+    - .search-results.com
+    - searchqu.com
+    - safesearch.avira.com
   Atlas:
-    - 'searchatlas.centrum.cz'
+    - searchatlas.centrum.cz
   auone:
-    - 'search.auone.jp'
+    - search.auone.jp
   auone Images:
-    - 'sp-image.search.auone.jp'
+    - sp-image.search.auone.jp
   Austronaut:
-    - '.austronaut.at'
+    - .austronaut.at
   Babylon:
-    - 'search.babylon.com'
+    - search.babylon.com
   Babylon:
-    - 'searchassist.babylon.com'
+    - searchassist.babylon.com
   Baidu:
-    - '.baidu.co'
-    - 'web.gougou.com'
+    - .baidu.co
+    - web.gougou.com
   Biglobe:
-    - 'cgi.search.biglobe.ne.jp'
+    - cgi.search.biglobe.ne.jp
   Biglobe Images:
-    - 'images.search.biglobe.ne.jp'
+    - images.search.biglobe.ne.jp
   Bing:
-    - 'bing.com'
-    - 'msnbc.msn.com'
-    - 'dizionario.it.msn.com'
-    - 'enciclopedia.it.msn.com'
-    - 'cc.bingj.com'
+    - bing.com
+    - msnbc.msn.com
+    - dizionario.it.msn.com
+    - enciclopedia.it.msn.com
+    - cc.bingj.com
   blekko:
-    - 'blekko.com'
+    - blekko.com
   Blogdigger:
-    - 'www.blogdigger.com'
+    - www.blogdigger.com
   Blogpulse:
-    - 'www.blogpulse.com'
+    - www.blogpulse.com
   Bluewin:
-    - 'search.bluewin.ch'
+    - search.bluewin.ch
   Canoe.ca:
-    - 'web.canoe.ca'
+    - web.canoe.ca
   Centrum:
-    - '.centrum.cz'
+    - .centrum.cz
   Charter:
-    - 'www.charter.net'
+    - www.charter.net
   Claro Search:
-    - 'claro-search.com'
+    - claro-search.com
   Clix:
-    - 'pesquisa.clix.pt'
+    - pesquisa.clix.pt
   Conduit.com:
-    - 'search.conduit.com'
+    - search.conduit.com
   Comcast:
-    - 'search.comcast.net'
+    - search.comcast.net
   Crawler:
-    - 'www.crawler.com'
+    - www.crawler.com
   Compuserve.com (Enhanced by Google):
-    - 'websearch.cs.com'
+    - websearch.cs.com
   Cuil:
-    - 'www.cuil.com'
+    - www.cuil.com
   Daemon search:
-    - 'daemon-search.com'
+    - daemon-search.com
   DasOertliche:
-    - '.dasoertliche.de'
+    - .dasoertliche.de
   DasTelefonbuch:
-    - 'www1.dastelefonbuch.de'
+    - www1.dastelefonbuch.de
   Daum:
-    - 'search.daum.net'
+    - search.daum.net
   Delfi lv:
-    - 'smart.delfi.lv'
+    - smart.delfi.lv
   Delfi EE:
-    - 'otsing.delfi.ee'
-  Digg:
-    - 'digg.com'
+    - otsing.delfi.ee
   dir.com:
-    - 'fr.dir.com'
+    - fr.dir.com
   dmoz:
-    - 'dmoz.org'
+    - dmoz.org
   DuckDuckGo:
-    - 'duckduckgo.com'
+    - duckduckgo.com
   Earthlink:
-    - 'search.earthlink.net'
+    - search.earthlink.net
   Ecosia:
-    - 'ecosia.org'
+    - ecosia.org
   Eniro:
-    - 'www.eniro.se'
+    - www.eniro.se
   Eurip:
-    - 'www.eurip.com'
+    - www.eurip.com
   Euroseek:
-    - 'www.euroseek.com'
+    - www.euroseek.com
   Everyclick:
-    - 'www.everyclick.com'
+    - www.everyclick.com
   Excite:
-    - '.excite.'
+    - .excite.
   Exalead:
-    - 'www.exalead.fr'
+    - www.exalead.fr
   Exalead:
-    - 'www.exalead.com'
+    - www.exalead.com
   eo:
-    - 'eo.st'
+    - eo.st
   Fast Browser Search:
-    - 'www.fastbrowsersearch.com'
+    - www.fastbrowsersearch.com
   Francite:
-    - 'recherche.francite.com'
+    - recherche.francite.com
   Findhurtig:
-    - 'www.findhurtig.dk'
+    - www.findhurtig.dk
   Fireball:
-    - 'www.fireball.de'
+    - www.fireball.de
   Firstsfind:
-    - 'www.firstsfind.com'
+    - www.firstsfind.com
   Fixsuche:
-    - 'www.fixsuche.de'
+    - www.fixsuche.de
   Flix.de:
-    - 'www.flix.de'
+    - www.flix.de
   Forestle:
-    - 'forestle.'
-    - 'forestle.'
+    - forestle.
+    - forestle.
   Free:
-    - '.free.fr'
+    - .free.fr
   FreeCause:
-    - 'search.freecause.com'
+    - search.freecause.com
   Freenet:
-    - 'suche.freenet.de'
+    - suche.freenet.de
   FriendFeed:
-    - 'friendfeed.com'
+    - friendfeed.com
   GAIS:
-    - 'gais.cs.ccu.edu.tw'
+    - gais.cs.ccu.edu.tw
   Genieo:
-    - 'search.genieo.com'
+    - search.genieo.com
   Geona:
-    - 'geona.net'
+    - geona.net
   Gigablast:
-    - '.gigablast.com'
+    - .gigablast.com
   Gnadenmeer:
-    - 'www.gnadenmeer.de'
+    - www.gnadenmeer.de
   Gomeo:
-    - 'www.gomeo.com'
+    - www.gomeo.com
   goo:
-    - 'search.goo.ne.jp'
+    - search.goo.ne.jp
   Google:
-    - 'google.com'
-    - 'gogole.com'
-    - 'gppgle.com'
-    - 'googel.com'
-    - 'search.avg.com'
-    - 'isearch.avg.com'
-    - 'darkoogle.com'
-    - 'search.foxtab.com'
-    - 'www.gooofullsearch.com'
-    - 'search.hiyo.com'
-    - 'search.incredimail.com'
-    - 'search1.incredimail.com'
-    - 'search2.incredimail.com'
-    - 'search3.incredimail.com'
-    - 'search4.incredimail.com'
-    - 'search.sweetim.com'
-    - 'www.fastweb.it'
-    - 'search.juno.com'
-    - 'find.tdc.dk'
-    - 'it.luna.tv'
-    - 'searchresults.verizon.com'
-    - 'search.walla.co.il'
-    - 'search.alot.com'
-    - 'suche.gmx.net'
-    - 'search.incredibar.com'
-    - '.delta-search.com'
-    - 'search.1und1.de'
-    - 'search.zonealarm.com'
-    - 'start.lenovo.com'
-    - 'wow.com'
-    - 'search.leonardo.it'
-    - 'www.optuszoo.com.au'
-    - 'search.dolphin-browser.jp'
-    - 'search.smt.docomo.ne.jp'
-    - 'image.search.smt.docomo.ne.jp'
-    - 'searches.safehomepage.com'
-    - 'searches.f-secure.com'
-    - 'webcache.googleusercontent.com'
+    - google.com
+    - gogole.com
+    - gppgle.com
+    - googel.com
+    - search.avg.com
+    - isearch.avg.com
+    - darkoogle.com
+    - search.foxtab.com
+    - www.gooofullsearch.com
+    - search.hiyo.com
+    - search.incredimail.com
+    - search1.incredimail.com
+    - search2.incredimail.com
+    - search3.incredimail.com
+    - search4.incredimail.com
+    - search.sweetim.com
+    - www.fastweb.it
+    - search.juno.com
+    - find.tdc.dk
+    - it.luna.tv
+    - searchresults.verizon.com
+    - search.walla.co.il
+    - search.alot.com
+    - suche.gmx.net
+    - search.incredibar.com
+    - .delta-search.com
+    - search.1und1.de
+    - search.zonealarm.com
+    - start.lenovo.com
+    - wow.com
+    - search.leonardo.it
+    - www.optuszoo.com.au
+    - search.dolphin-browser.jp
+    - search.smt.docomo.ne.jp
+    - image.search.smt.docomo.ne.jp
+    - searches.safehomepage.com
+    - searches.f-secure.com
+    - webcache.googleusercontent.com
   Google query:
-    - 'www.cnn.com'
+    - www.cnn.com
   Google SSL:
-    - 'encrypted.google.com'
+    - encrypted.google.com
   Google Blogsearch:
-    - 'blogsearch.google.com'
+    - blogsearch.google.com
   Google Custom Search:
-    - 'google.com/cse'
-    - 'google.com/custom'
+    - google.com/cse
+    - google.com/custom
   Google Translations:
-    - 'translate.google.com'
+    - translate.google.com
   Google Images:
-    - 'images.google.com'
+    - images.google.com
   Google Maps:
-    - 'maps.google.com'
+    - maps.google.com
   Google News:
-    - 'news.google.com'
+    - news.google.com
   Google Shopping:
-    - 'google.com/products'
+    - google.com/products
   Google syndicated search:
-    - 'googlesyndicatedsearch.com'
+    - googlesyndicatedsearch.com
   Google Video:
-    - 'video.google.com'
+    - video.google.com
   Google Scholar:
-    - 'scholar.google.com'
+    - scholar.google.com
   GoYellow.de:
-    - 'www.goyellow.de'
+    - www.goyellow.de
   Gule Sider:
-    - 'www.gulesider.no'
+    - www.gulesider.no
   Haosou:
-    - 'www.haosou.com'
+    - www.haosou.com
   HighBeam:
-    - 'www.highbeam.com'
+    - www.highbeam.com
   Hit-Parade:
-    - '.hit-parade.com'
+    - .hit-parade.com
   Holmes:
-    - 'holmes.ge'
+    - holmes.ge
   Hooseek:
-    - 'www.hooseek.com'
+    - www.hooseek.com
   Hotbot:
-    - 'www.hotbot.com'
+    - www.hotbot.com
   Icerocket:
-    - 'blogs.icerocket.com'
+    - blogs.icerocket.com
   ICQ:
-    - '.icq.com'
+    - .icq.com
   Ilse NL:
-    - 'www.ilse.nl'
+    - www.ilse.nl
   iMesh:
-    - 'search.imesh.com'
+    - search.imesh.com
   Inbox:
-    - 'www2.inbox.com'
+    - www2.inbox.com
   InfoSpace:
-    - 'infospace.com'
-    - 'dogpile.com'
-    - 'tattoodle.com'
-    - 'metacrawler.com'
-    - 'webfetch.com'
-    - 'webcrawler.com'
-    - 'search.kiwee.com'
-    - 'wsdsold.infospace.com'
-    - 'isearch.babylon.com'
-    - 'start.facemoods.com'
-    - 'start.funmoods.com'
-    - 'search.magentic.com'
-    - 'search.searchcompletion.com'
-    - 'www.searchmobileonline.com'
-    - 'isearch.glarysoft.com'
-    - 'search.chatzum.com'
-    - 'home.speedbit.com'
-    - 'search.b1.org'
-    - 'searchya.com'
-    - 'search.handycafe.com'
-    - 'search.v9.com'
-    - 'search.iminent.com'
-    - 'utorrent.inspsearch.com'
+    - infospace.com
+    - dogpile.com
+    - tattoodle.com
+    - metacrawler.com
+    - webfetch.com
+    - webcrawler.com
+    - search.kiwee.com
+    - wsdsold.infospace.com
+    - isearch.babylon.com
+    - start.facemoods.com
+    - start.funmoods.com
+    - search.magentic.com
+    - search.searchcompletion.com
+    - www.searchmobileonline.com
+    - isearch.glarysoft.com
+    - search.chatzum.com
+    - home.speedbit.com
+    - search.b1.org
+    - searchya.com
+    - search.handycafe.com
+    - search.v9.com
+    - search.iminent.com
+    - utorrent.inspsearch.com
   Yahoo:
-    - 'yahoo.com'
+    - yahoo.com
