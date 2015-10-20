@@ -17,7 +17,7 @@ social:
     - login.live.com
   LinkedIn:
     - lnkd.in
-    - linkedin.com
+    - linkedin
   Bebo:
     - bebo.com
   Vkontakte:
@@ -47,6 +47,7 @@ social:
     - github.com
   Google Plus:
     - ((plus\.)|(url\.))google.com
+    - googleplus
   douban:
     - douban.com
   Odnoklassniki:
@@ -152,7 +153,7 @@ social:
     - scoop\.it
   Disqus:
     - disqus
-  Wordpress:
+  WordPress:
     - wordpress
   paper.li:
     - paper\.li
