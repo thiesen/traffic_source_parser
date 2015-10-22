@@ -353,6 +353,31 @@ search:
     - www.gomeo.com
   goo:
     - search.goo.ne.jp
+  Google query:
+    - www.cnn.com
+  Google SSL:
+    - encrypted.google.com
+  Google Blogsearch:
+    - blogsearch.google.com
+  Google Custom Search:
+    - google.com/cse
+    - google.com/custom
+  Google Translations:
+    - translate.google.com
+  Google Images:
+    - images.google.com
+  Google Maps:
+    - maps.google.com
+  Google News:
+    - news.google.com
+  Google Shopping:
+    - google.com/products
+  Google syndicated search:
+    - googlesyndicatedsearch.com
+  Google Video:
+    - video.google.com
+  Google Scholar:
+    - scholar.google.com
   Google:
     - google.com
     - gogole.com
@@ -392,31 +417,6 @@ search:
     - searches.safehomepage.com
     - searches.f-secure.com
     - webcache.googleusercontent.com
-  Google query:
-    - www.cnn.com
-  Google SSL:
-    - encrypted.google.com
-  Google Blogsearch:
-    - blogsearch.google.com
-  Google Custom Search:
-    - google.com/cse
-    - google.com/custom
-  Google Translations:
-    - translate.google.com
-  Google Images:
-    - images.google.com
-  Google Maps:
-    - maps.google.com
-  Google News:
-    - news.google.com
-  Google Shopping:
-    - google.com/products
-  Google syndicated search:
-    - googlesyndicatedsearch.com
-  Google Video:
-    - video.google.com
-  Google Scholar:
-    - scholar.google.com
   GoYellow.de:
     - www.goyellow.de
   Gule Sider:
