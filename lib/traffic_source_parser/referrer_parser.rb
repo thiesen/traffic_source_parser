@@ -38,6 +38,7 @@ module TrafficSourceParser
 
       def referrer_data
         referrer = DomainTools.clear_domain(@referrer.dup)
+        return unless referrer
         referrers_list.each{|type, refs| refs.each{|ref, sources| return type, ref if referrer.match(sources * '|')} }
       end
 
