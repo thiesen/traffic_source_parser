@@ -31,8 +31,8 @@ describe TrafficSourceParser::Parser::UtmzParser do
       context 'when medium is display' do
         let(:cookie) { ' 186095035.1415927951.1.1.utmcsr=google|utmgclid=CI_WsND2-MECFezm7Aod6DsASw|utmccn=scm_beta|utmcmd=display|utmcct=Display_integra' }
         let(:campaign) { 'scm_beta' }
-        let(:medium) { 'display' }
-        let(:channel) { 'Display' }
+        let(:medium) { 'cpc' }
+        let(:channel) { 'Paid Search' }
         let(:source) { 'google' }
 
         it_behaves_like 'a traffic source campaign parser'
@@ -99,7 +99,7 @@ describe TrafficSourceParser::Parser::UtmzParser do
                         "cn=linkshare|utmcmd=(not set)" }
           let(:source) { "rakuten" }
           let(:campaign) { "linkshare" }
-          let(:channel) { "Referral" }
+          let(:channel) { "(Other)" }
           let(:medium) { "(not set)" }
 
           it_behaves_like 'a traffic source campaign parser'
@@ -111,7 +111,7 @@ describe TrafficSourceParser::Parser::UtmzParser do
                         "tycolleges|utmcct=programa" }
           let(:source) { "newsletter" }
           let(:campaign) { "20150527" }
-          let(:channel) { "Other" }
+          let(:channel) { "(Other)" }
           let(:medium) { "newsletter-ef"}
           let(:term) { "communitycolleges" }
           let(:content) { "programa" }
