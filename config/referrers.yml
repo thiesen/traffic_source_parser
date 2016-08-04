@@ -46,10 +46,10 @@ social:
   Github:
     - github\.com
   Google Plus:
-    - ((plus\.)|(url\.))google.com
+    - ((plus\.)|(url\.))google\.com
     - googleplus
   douban:
-    - douban.com
+    - douban\.com
   Odnoklassniki:
     - odnoklassniki\.ru
   Viadeo:
@@ -122,7 +122,7 @@ social:
   vkrugudruzei.ru:
     - vkrugudruzei\.ru
   my.mail.ru:
-    - my.mail\.ru
+    - my\.mail\.ru
   moikrug.ru:
     - moikrug\.ru
   reddit:
@@ -130,7 +130,7 @@ social:
   Hacker News:
     - news\.ycombinator\.com
   identi.ca:
-    - identi.ca
+    - identi\.ca
   Weibo:
     - weibo\.com
     - t\.cn
