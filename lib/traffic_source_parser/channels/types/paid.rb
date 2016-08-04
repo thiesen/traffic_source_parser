@@ -12,7 +12,6 @@ module TrafficSourceParser
             'Paid Search'
           end
 
-          # Traffic from the AdWords Search Network or other search engines, with a medium of "cpc" or "ppc".
           def match_source?(traffic_source)
             traffic_source[:medium] =~ PAID_SEARCH_REGEX || utmgclid?(traffic_source)
           end

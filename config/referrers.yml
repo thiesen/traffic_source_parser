@@ -1,1110 +1,471 @@
-facebook.com:
-  source: Facebook
-  type: social
-m.facebook.com:
-  source: Facebook
-  type: social
-l.facebook.com:
-  source: Facebook
-  type: social
-lm.facebook.com:
-  source: Facebook
-  type: social
-facebook:
-  source: Facebook
-  type: social
-fb.me:
-  source: Facebook
-  type: social
-qzone.qq.com:
-  source: Qzone
-  type: social
-habbo.com:
-  source: Haboo
-  type: social
-twitter.com:
-  source: Twitter
-  type: social
-t.co:
-  source: Twitter
-  type: social
-renren.com:
-  source: Renren
-  type: social
-login.live.com:
-  source: Windows Live Spaces
-  type: social
-lnkd.in:
-  source: LinkedIn
-  type: social
-linkedin.com:
-  source: LinkedIn
-  type: social
-bebo.com:
-  source: Bebo
-  type: social
-vk.com:
-  source: Vkontakte
-  type: social
-vkontakte.ru:
-  source: Vkontakte
-  type: social
-login.tagged.com:
-  source: Tagged
-  type: social
-orkut.com:
-  source: Orkut
-  type: social
-myspace.com:
-  source: Myspace
-  type: social
-friendster.com:
-  source: Friendster
-  type: social
-badoo.com:
-  source: Badoo
-  type: social
-hi5.com:
-  source: hi5
-  type: social
-netlog.com:
-  source: Netlog
-  type: social
-flixster.com:
-  source: Flixster
-  type: social
-mylife.ru:
-  source: MyLife
-  type: social
-classmates.com:
-  source: Classmates.com
-  type: social
-github.com:
-  source: Github
-  type: social
-plus.url.google.com:
-  source: Google Plus
-  type: social
-url.google.com:
-  source: Google Plus
-  type: social
-douban.com:
-  source: douban
-  type: social
-odnoklassniki.ru:
-  source: Odnoklassniki
-  type: social
-viadeo.com:
-  source: Viadeo
-  type: social
-flickr.com:
-  source: Flickr
-  type: social
-weeworld.com:
-  source: WeeWorld
-  type: social
-last.fm:
-  source: Last.fm
-  type: social
-lastfm.ru:
-  source: Last.fm
-  type: social
-lastfm.de:
-  source: Last.fm
-  type: social
-lastfm.es:
-  source: Last.fm
-  type: social
-lastfm.fr:
-  source: Last.fm
-  type: social
-lastfm.it:
-  source: Last.fm
-  type: social
-lastfm.jp:
-  source: Last.fm
-  type: social
-lastfm.pl:
-  source: Last.fm
-  type: social
-lastfm.com.br:
-  source: Last.fm
-  type: social
-lastfm.se:
-  source: Last.fm
-  type: social
-lastfm.com.tr:
-  source: Last.fm
-  type: social
-myheritage.com:
-  source: MyHeritage
-  type: social
-xanga.com:
-  source: Xanga
-  type: social
-mixi.jp:
-  source: Mixi
-  type: social
-global.cyworld.com:
-  source: Cyworld
-  type: social
-gaiaonline.com:
-  source: Gaia Online
-  type: social
-skyrock.com:
-  source: Skyrock
-  type: social
-blackplanet.com:
-  source: BlackPlanet
-  type: social
-myyearbook.com:
-  source: myYearbook
-  type: social
-fotolog.com:
-  source: Fotolog
-  type: social
-friendsreunited.com:
-  source: Friends Reunited
-  type: social
-livejournal.ru:
-  source: LiveJournal
-  type: social
-livejournal.com:
-  source: LiveJournal
-  type: social
-studivz.net:
-  source: StudiVZ
-  type: social
-meinvz.net:
-  source: MeinVZ
-  type: social
-stackoverflow.com:
-  source: StackOverflow
-  type: social
-sonico.com:
-  source: Sonico.com
-  type: social
-pinterest.com:
-  source: Pinterest
-  type: social
-plaxo.com:
-  source: Plaxo
-  type: social
-geni.com:
-  source: Geni.com
-  type: social
-tuenti.com:
-  source: Tuenti
-  type: social
-xing.com:
-  source: XING
-  type: social
-taringa.net:
-  source: Taringa!
-  type: social
-nk.pl:
-  source: Nasza-klasa.pl
-  type: social
-stumbleupon.com:
-  source: StumbleUpon
-  type: social
-sourceforge.net:
-  source: SourceForge
-  type: social
-hyves.nl:
-  source: Hyves
-  type: social
-wayn.com:
-  source: WAYN
-  type: social
-buzznet.com:
-  source: Buzznet
-  type: social
-multiply.com:
-  source: Multiply
-  type: social
-foursquare.com:
-  source: Foursquare
-  type: social
-vkrugudruzei.ru:
-  source: vkrugudruzei.ru
-  type: social
-my.mail.ru:
-  source: my.mail.ru
-  type: social
-moikrug.ru:
-  source: moikrug.ru
-  type: social
-reddit.com:
-  source: reddit
-  type: social
-news.ycombinator.com:
-  source: Hacker News
-  type: social
-identi.ca:
-  source: identi.ca
-  type: social
-weibo.com:
-  source: Weibo
-  type: social
-t.cn:
-  source: Weibo
-  type: social
-youtube.com:
-  source: YouTube
-  type: social
-youtu.be:
-  source: YouTube
-  type: social
-vimeo.com:
-  source: Vimeo
-  type: social
-tumblr.com:
-  source: tumblr
-  type: social
-1.cz:
-  source: 1.cz
-  type: search
-www.123people.com:
-  source: 123people
-  type: search
-so.360.cn:
-  source: 360search
-  type: search
-www.so.com:
-  source: 360search
-  type: search
-www.abacho.de:
-  source: Abacho
-  type: search
-www.abacho.com:
-  source: Abacho
-  type: search
-www.abacho.co.uk:
-  source: Abacho
-  type: search
-www.se.abacho.com:
-  source: Abacho
-  type: search
-www.tr.abacho.com:
-  source: Abacho
-  type: search
-www.abacho.at:
-  source: Abacho
-  type: search
-www.abacho.fr:
-  source: Abacho
-  type: search
-www.abacho.es:
-  source: Abacho
-  type: search
-www.abacho.ch:
-  source: Abacho
-  type: search
-www.abacho.it:
-  source: Abacho
-  type: search
-abcsok.no:
-  source: ABCsøk
-  type: search
-verden.abcsok.no:
-  source: ABCsøk
-  type: search
-www.acoon.de:
-  source: Acoon
-  type: search
-chercherfr.aguea.com:
-  source: Aguea
-  type: search
-alexa.com:
-  source: Alexa
-  type: search
-search.toolbars.alexa.com:
-  source: Alexa
-  type: search
-rechercher.aliceadsl.fr:
-  source: Alice Adsl
-  type: search
-www.allesklar.de:
-  source: Allesklar
-  type: search
-www.allesklar.at:
-  source: Allesklar
-  type: search
-www.allesklar.ch:
-  source: Allesklar
-  type: search
-www.alltheweb.com:
-  source: AllTheWeb
-  type: search
-all.by:
-  source: All.by
-  type: search
-www.altavista.com:
-  source: AltaVista
-  type: search
-search.altavista.com:
-  source: AltaVista
-  type: search
-listings.altavista.com:
-  source: AltaVista
-  type: search
-altavista.de:
-  source: AltaVista
-  type: search
-altavista.fr:
-  source: AltaVista
-  type: search
-be-nl.altavista.com:
-  source: AltaVista
-  type: search
-be-fr.altavista.com:
-  source: AltaVista
-  type: search
-apollo.lv/portal/search/:
-  source: Apollo lv
-  type: search
-apollo7.de:
-  source: Apollo7
-  type: search
-search.aol.com:
-  source: AOL
-  type: search
-search.aol.it:
-  source: AOL
-  type: search
-aolsearch.aol.com:
-  source: AOL
-  type: search
-www.aolrecherche.aol.fr:
-  source: AOL
-  type: search
-www.aolrecherches.aol.fr:
-  source: AOL
-  type: search
-www.aolimages.aol.fr:
-  source: AOL
-  type: search
-aim.search.aol.com:
-  source: AOL
-  type: search
-www.recherche.aol.fr:
-  source: AOL
-  type: search
-recherche.aol.fr:
-  source: AOL
-  type: search
-find.web.aol.com:
-  source: AOL
-  type: search
-recherche.aol.ca:
-  source: AOL
-  type: search
-aolsearch.aol.co.uk:
-  source: AOL
-  type: search
-search.aol.co.uk:
-  source: AOL
-  type: search
-aolrecherche.aol.fr:
-  source: AOL
-  type: search
-sucheaol.aol.de:
-  source: AOL
-  type: search
-suche.aol.de:
-  source: AOL
-  type: search
-o2suche.aol.de:
-  source: AOL
-  type: search
-suche.aolsvc.de:
-  source: AOL
-  type: search
-aolbusqueda.aol.com.mx:
-  source: AOL
-  type: search
-alicesuche.aol.de:
-  source: AOL
-  type: search
-alicesuchet.aol.de:
-  source: AOL
-  type: search
-suchet2.aol.de:
-  source: AOL
-  type: search
-search.hp.my.aol.com.au:
-  source: AOL
-  type: search
-search.hp.my.aol.de:
-  source: AOL
-  type: search
-search.hp.my.aol.it:
-  source: AOL
-  type: search
-search-intl.netscape.com:
-  source: AOL
-  type: search
-de.aolsearch.com:
-  source: AOL
-  type: search
-sm.aport.ru:
-  source: Aport
-  type: search
-arama.com:
-  source: Arama
-  type: search
-www.arcor.de:
-  source: Arcor
-  type: search
-arianna.libero.it:
-  source: Arianna
-  type: search
-www.arianna.com:
-  source: Arianna
-  type: search
-ask.com:
-  source: Ask
-  type: search
-web.ask.com:
-  source: Ask
-  type: search
-int.ask.com:
-  source: Ask
-  type: search
-mws.ask.com:
-  source: Ask
-  type: search
-images.ask.com:
-  source: Ask
-  type: search
-ask.reference.com:
-  source: Ask
-  type: search
-www.askkids.com:
-  source: Ask
-  type: search
-iwon.ask.com:
-  source: Ask
-  type: search
-www.ask.co.uk:
-  source: Ask
-  type: search
-www.qbyrd.com:
-  source: Ask
-  type: search
-www.search-results.com:
-  source: Ask
-  type: search
-www1.search-results.com:
-  source: Ask
-  type: search
-int.search-results.com:
-  source: Ask
-  type: search
-search.ask.com:
-  source: Ask
-  type: search
-avira-int.ask.com:
-  source: Ask
-  type: search
-searchqu.com:
-  source: Ask
-  type: search
-search.tb.ask.com:
-  source: Ask
-  type: search
-nortonsafe.search.ask.com:
-  source: Ask
-  type: search
-safesearch.avira.com:
-  source: Ask
-  type: search
-avira.search.ask.com:
-  source: Ask
-  type: search
-searchatlas.centrum.cz:
-  source: Atlas
-  type: search
-search.auone.jp:
-  source: auone
-  type: search
-sp-image.search.auone.jp:
-  source: auone Images
-  type: search
-www2.austronaut.at:
-  source: Austronaut
-  type: search
-www1.austronaut.at:
-  source: Austronaut
-  type: search
-search.babylon.com:
-  source: Babylon
-  type: search
-searchassist.babylon.com:
-  source: Babylon
-  type: search
-www.baidu.com:
-  source: Baidu
-  type: search
-www1.baidu.com:
-  source: Baidu
-  type: search
-m.baidu.com:
-  source: Baidu
-  type: search
-www.baidu.co.th:
-  source: Baidu
-  type: search
-zhidao.baidu.com:
-  source: Baidu
-  type: search
-tieba.baidu.com:
-  source: Baidu
-  type: search
-news.baidu.com:
-  source: Baidu
-  type: search
-web.gougou.com:
-  source: Baidu
-  type: search
-cgi.search.biglobe.ne.jp:
-  source: Biglobe
-  type: search
-images.search.biglobe.ne.jp:
-  source: Biglobe Images
-  type: search
-bing.com:
-  source: Bing
-  type: search
-msnbc.msn.com:
-  source: Bing
-  type: search
-dizionario.it.msn.com:
-  source: Bing
-  type: search
-enciclopedia.it.msn.com:
-  source: Bing
-  type: search
-cc.bingj.com:
-  source: Bing
-  type: search
-bing.com/images/search:
-  source: Bing Images
-  type: search
-blekko.com:
-  source: blekko
-  type: search
-www.blogdigger.com:
-  source: Blogdigger
-  type: search
-www.blogpulse.com:
-  source: Blogpulse
-  type: search
-search.bluewin.ch:
-  source: Bluewin
-  type: search
-web.canoe.ca:
-  source: Canoe.ca
-  type: search
-search.centrum.cz:
-  source: Centrum
-  type: search
-morfeo.centrum.cz:
-  source: Centrum
-  type: search
-www.charter.net:
-  source: Charter
-  type: search
-claro-search.com:
-  source: Claro Search
-  type: search
-pesquisa.clix.pt:
-  source: Clix
-  type: search
-search.conduit.com:
-  source: Conduit.com
-  type: search
-images.search.conduit.com:
-  source: Conduit.com
-  type: search
-search.comcast.net:
-  source: Comcast
-  type: search
-www.crawler.com:
-  source: Crawler
-  type: search
-websearch.cs.com:
-  source: Compuserve.com (Enhanced by Google)
-  type: search
-www.cuil.com:
-  source: Cuil
-  type: search
-daemon-search.com:
-  source: Daemon search
-  type: search
-my.daemon-search.com:
-  source: Daemon search
-  type: search
-www.dasoertliche.de:
-  source: DasOertliche
-  type: search
-www2.dasoertliche.de:
-  source: DasOertliche
-  type: search
-www1.dastelefonbuch.de:
-  source: DasTelefonbuch
-  type: search
-search.daum.net:
-  source: Daum
-  type: search
-smart.delfi.lv:
-  source: Delfi lv
-  type: search
-otsing.delfi.ee:
-  source: Delfi EE
-  type: search
-digg.com:
-  source: Digg
-  type: search
-fr.dir.com:
-  source: dir.com
-  type: search
-dmoz.org:
-  source: dmoz
-  type: search
-editors.dmoz.org:
-  source: dmoz
-  type: search
-duckduckgo.com:
-  source: DuckDuckGo
-  type: search
-r.duckduckgo.com:
-  source: DuckDuckGo
-  type: search
-search.earthlink.net:
-  source: Earthlink
-  type: search
-ecosia.org:
-  source: Ecosia
-  type: search
-www.eniro.se:
-  source: Eniro
-  type: search
-www.eurip.com:
-  source: Eurip
-  type: search
-www.euroseek.com:
-  source: Euroseek
-  type: search
-www.everyclick.com:
-  source: Everyclick
-  type: search
-search.excite.it:
-  source: Excite
-  type: search
-search.excite.fr:
-  source: Excite
-  type: search
-search.excite.de:
-  source: Excite
-  type: search
-search.excite.co.uk:
-  source: Excite
-  type: search
-search.excite.es:
-  source: Excite
-  type: search
-search.excite.nl:
-  source: Excite
-  type: search
-msxml.excite.com:
-  source: Excite
-  type: search
-www.excite.co.jp:
-  source: Excite
-  type: search
-www.exalead.fr:
-  source: Exalead
-  type: search
-www.exalead.com:
-  source: Exalead
-  type: search
-eo.st:
-  source: eo
-  type: search
-www.fastbrowsersearch.com:
-  source: Fast Browser Search
-  type: search
-recherche.francite.com:
-  source: Francite
-  type: search
-www.findhurtig.dk:
-  source: Findhurtig
-  type: search
-www.fireball.de:
-  source: Fireball
-  type: search
-www.firstsfind.com:
-  source: Firstsfind
-  type: search
-www.fixsuche.de:
-  source: Fixsuche
-  type: search
-www.flix.de:
-  source: Flix.de
-  type: search
-forestle.org:
-  source: Forestle
-  type: search
-forestle.mobi:
-  source: Forestle
-  type: search
-search.free.fr:
-  source: Free
-  type: search
-search1-2.free.fr:
-  source: Free
-  type: search
-search1-1.free.fr:
-  source: Free
-  type: search
-search.freecause.com:
-  source: FreeCause
-  type: search
-suche.freenet.de:
-  source: Freenet
-  type: search
-friendfeed.com:
-  source: FriendFeed
-  type: search
-gais.cs.ccu.edu.tw:
-  source: GAIS
-  type: search
-search.genieo.com:
-  source: Genieo
-  type: search
-geona.net:
-  source: Geona
-  type: search
-www.gigablast.com:
-  source: Gigablast
-  type: search
-dir.gigablast.com:
-  source: Gigablast (Directory)
-  type: search
-www.gnadenmeer.de:
-  source: Gnadenmeer
-  type: search
-www.gomeo.com:
-  source: Gomeo
-  type: search
-search.goo.ne.jp:
-  source: goo
-  type: search
-ocnsearch.goo.ne.jp:
-  source: goo
-  type: search
-google.com:
-  source: Google
-  type: search
-google.com.br:
-  source: Google
-  type: search
-www2.google.com:
-  source: Google
-  type: search
-ipv6.google.com:
-  source: Google
-  type: search
-go.google.com:
-  source: Google
-  type: search
-wwwgoogle.com:
-  source: Google
-  type: search
-gogole.com:
-  source: Google
-  type: search
-gppgle.com:
-  source: Google
-  type: search
-googel.com:
-  source: Google
-  type: search
-search.avg.com:
-  source: Google
-  type: search
-isearch.avg.com:
-  source: Google
-  type: search
-www.cnn.com:
-  source: Google query
-  type: search
-darkoogle.com:
-  source: Google
-  type: search
-search.darkoogle.com:
-  source: Google
-  type: search
-search.foxtab.com:
-  source: Google
-  type: search
-www.gooofullsearch.com:
-  source: Google
-  type: search
-search.hiyo.com:
-  source: Google
-  type: search
-search.incredimail.com:
-  source: Google
-  type: search
-search1.incredimail.com:
-  source: Google
-  type: search
-search2.incredimail.com:
-  source: Google
-  type: search
-search3.incredimail.com:
-  source: Google
-  type: search
-search4.incredimail.com:
-  source: Google
-  type: search
-search.sweetim.com:
-  source: Google
-  type: search
-www.fastweb.it:
-  source: Google
-  type: search
-search.juno.com:
-  source: Google
-  type: search
-find.tdc.dk:
-  source: Google
-  type: search
-it.luna.tv:
-  source: Google
-  type: search
-searchresults.verizon.com:
-  source: Google
-  type: search
-search.walla.co.il:
-  source: Google
-  type: search
-search.alot.com:
-  source: Google
-  type: search
-suche.gmx.net:
-  source: Google
-  type: search
-search.incredibar.com:
-  source: Google
-  type: search
-www.delta-search.com:
-  source: Google
-  type: search
-www1.delta-search.com:
-  source: Google
-  type: search
-search.1und1.de:
-  source: Google
-  type: search
-search.zonealarm.com:
-  source: Google
-  type: search
-start.lenovo.com:
-  source: Google
-  type: search
-wow.com:
-  source: Google
-  type: search
-search.leonardo.it:
-  source: Google
-  type: search
-www.optuszoo.com.au:
-  source: Google
-  type: search
-search.dolphin-browser.jp:
-  source: Google
-  type: search
-search.smt.docomo.ne.jp:
-  source: Google
-  type: search
-image.search.smt.docomo.ne.jp:
-  source: Google
-  type: search
-gfsoso.com:
-  source: Google
-  type: search
-searches.safehomepage.com:
-  source: Google
-  type: search
-searches.f-secure.com:
-  source: Google
-  type: search
-webcache.googleusercontent.com:
-  source: Google
-  type: search
-encrypted.google.com:
-  source: Google SSL
-  type: search
-blogsearch.google.com:
-  source: Google Blogsearch
-  type: search
-google.com/cse:
-  source: Google Custom Search
-  type: search
-google.com/custom:
-  source: Google Custom Search
-  type: search
-translate.google.com:
-  source: Google Translations
-  type: search
-images.google.com:
-  source: Google Images
-  type: search
-maps.google.com:
-  source: Google Maps
-  type: search
-news.google.com:
-  source: Google News
-  type: search
-google.com/products:
-  source: Google Shopping
-  type: search
-googlesyndicatedsearch.com:
-  source: Google syndicated search
-  type: search
-video.google.com:
-  source: Google Video
-  type: search
-scholar.google.com:
-  source: Google Scholar
-  type: search
-www.goyellow.de:
-  source: GoYellow.de
-  type: search
-www.gulesider.no:
-  source: Gule Sider
-  type: search
-www.haosou.com:
-  source: Haosou
-  type: search
-www.highbeam.com:
-  source: HighBeam
-  type: search
-req.hit-parade.com:
-  source: Hit-Parade
-  type: search
-class.hit-parade.com:
-  source: Hit-Parade
-  type: search
-www.hit-parade.com:
-  source: Hit-Parade
-  type: search
-holmes.ge:
-  source: Holmes
-  type: search
-www.hooseek.com:
-  source: Hooseek
-  type: search
-www.hotbot.com:
-  source: Hotbot
-  type: search
-blogs.icerocket.com:
-  source: Icerocket
-  type: search
-www.icq.com:
-  source: ICQ
-  type: search
-search.icq.com:
-  source: ICQ
-  type: search
-www.ilse.nl:
-  source: Ilse NL
-  type: search
-search.imesh.com:
-  source: iMesh
-  type: search
-www2.inbox.com:
-  source: Inbox
-  type: search
-infospace.com:
-  source: InfoSpace
-  type: search
-dogpile.com:
-  source: InfoSpace
-  type: search
-tattoodle.com:
-  source: InfoSpace
-  type: search
-metacrawler.com:
-  source: InfoSpace
-  type: search
-webfetch.com:
-  source: InfoSpace
-  type: search
-webcrawler.com:
-  source: InfoSpace
-  type: search
-search.kiwee.com:
-  source: InfoSpace
-  type: search
-wsdsold.infospace.com:
-  source: InfoSpace
-  type: search
-isearch.babylon.com:
-  source: InfoSpace
-  type: search
-start.facemoods.com:
-  source: InfoSpace
-  type: search
-start.funmoods.com:
-  source: InfoSpace
-  type: search
-search.magentic.com:
-  source: InfoSpace
-  type: search
-search.searchcompletion.com:
-  source: InfoSpace
-  type: search
-www.searchmobileonline.com:
-  source: InfoSpace
-  type: search
-isearch.glarysoft.com:
-  source: InfoSpace
-  type: search
-search.chatzum.com:
-  source: InfoSpace
-  type: search
-home.speedbit.com:
-  source: InfoSpace
-  type: search
-search.b1.org:
-  source: InfoSpace
-  type: search
-searchya.com:
-  source: InfoSpace
-  type: search
-search.handycafe.com:
-  source: InfoSpace
-  type: search
-search.v9.com:
-  source: InfoSpace
-  type: search
-search.iminent.com:
-  source: InfoSpace
-  type: search
-utorrent.inspsearch.com:
-  source: InfoSpace
-  type: search
-yahoo.com:
-  source: Yahoo
-  type: search
-search.yahoo.com:
-  source: Yahoo
-  type: search
-r.search.yahoo.com:
-  source: Yahoo
-  type: search
+social:
+  Facebook:
+    - facebook
+    - fb.me
+  Twitter:
+    - twitter
+    - ^t.co
+  Qzone:
+    - qzone.qq.com
+  Haboo:
+    - habbo.com
+  Pocket:
+    - getpocket
+  Renren:
+    - renren.com
+  Windows Live Spaces:
+    - login.live.com
+  LinkedIn:
+    - lnkd.in
+    - linkedin
+  Bebo:
+    - bebo.com
+  Vkontakte:
+    - vk.com
+    - vkontakte.ru
+  Tagged:
+    - login.tagged.com
+  Orkut:
+    - orkut.com
+  Myspace:
+    - myspace.com
+  Friendster:
+    - friendster.com
+  Badoo:
+    - badoo.com
+  hi5:
+    - hi5.com
+  Netlog:
+    - netlog.com
+  Flixster:
+    - flixster.com
+  MyLife:
+    - mylife.ru
+  Classmates.com:
+    - classmates.com
+  Github:
+    - github.com
+  Google Plus:
+    - ((plus\.)|(url\.))google.com
+    - googleplus
+  douban:
+    - douban.com
+  Odnoklassniki:
+    - odnoklassniki.ru
+  Viadeo:
+    - viadeo.com
+  Flickr:
+    - flickr.com
+  WeeWorld:
+    - weeworld.com
+  Last.fm:
+    - last.fm
+    - lastfm.
+  MyHeritage:
+    - myheritage.com
+  Xanga:
+    - xanga.com
+  Mixi:
+    - mixi.jp
+  Cyworld:
+    - global.cyworld.com
+  Gaia Online:
+    - gaiaonline.com
+  Skyrock:
+    - skyrock.com
+  BlackPlanet:
+    - blackplanet.com
+  myYearbook:
+    - myyearbook.com
+  Fotolog:
+    - fotolog.com
+  Friends Reunited:
+    - friendsreunited.com
+  LiveJournal:
+    - livejournal.
+  StudiVZ:
+    - studivz.net
+  MeinVZ:
+    - meinvz.net
+  StackOverflow:
+    - stackoverflow.com
+  Sonico.com:
+    - sonico.com
+  Pinterest:
+    - pinterest.com
+  Plaxo:
+    - plaxo.com
+  Geni.com:
+    - geni.com
+  Tuenti:
+    - tuenti.com
+  XING:
+    - xing.com
+  Taringa!:
+    - taringa.net
+  Nasza-klasa.pl:
+    - nk.pl
+  StumbleUpon:
+    - stumbleupon
+  SourceForge:
+    - sourceforge.net
+  Hyves:
+    - hyves.nl
+  WAYN:
+    - wayn.com
+  Buzznet:
+    - buzznet.com
+  Multiply:
+    - multiply.com
+  Foursquare:
+    - foursquare.com
+  vkrugudruzei.ru:
+    - vkrugudruzei.ru
+  my.mail.ru:
+    - my.mail.ru
+  moikrug.ru:
+    - moikrug.ru
+  reddit:
+    - reddit.com
+  Hacker News:
+    - news.ycombinator.com
+  identi.ca:
+    - identi.ca
+  Weibo:
+    - weibo.com
+    - t.cn
+  YouTube:
+    - youtube.com
+    - youtu.be
+  Vimeo:
+    - vimeo.com
+  tumblr:
+    - tumblr.com
+  Pocket:
+    - getpocket
+  SlideShare:
+    - ^slideshare\.net
+  Meetup:
+    - meetup
+  Ning:
+    - api\.ning
+  Scoop.it:
+    - scoop\.it
+  Disqus:
+    - disqus
+  WordPress:
+    - wordpress
+  paper.li:
+    - paper\.li
+  Blogger:
+    - blogspot
+  Digg:
+    - digg.com
+
+
+search:
+  1.cz:
+    - 1.cz
+  123people:
+    - www.123people.com
+  360search:
+    - so.360.cn
+  360search:
+    - www.so.com
+  Abacho:
+    - .abacho.
+  ABCsøk:
+    - abcsok.no
+  ABCsøk:
+    - verden.abcsok.no
+  Acoon:
+    - www.acoon.de
+  Aguea:
+    - chercherfr.aguea.com
+  Alexa:
+    - alexa.com
+    - search.toolbars.alexa.com
+  Alice Adsl:
+    - rechercher.aliceadsl.fr
+  Allesklar:
+    - www.allesklar.
+    - www.allesklar.
+    - www.allesklar.
+  AllTheWeb:
+    - www.alltheweb.com
+  All.by:
+    - all.by
+  AltaVista:
+    - .altavista.
+  Apollo lv:
+    - apollo.lv/portal/search/
+  Apollo7:
+    - apollo7.de
+  AOL:
+    - .aol.
+    - suche.aolsvc.de
+    - search-intl.netscape.com
+    - de.aolsearch.com
+  Aport:
+    - sm.aport.ru
+  Arama:
+    - arama.com
+  Arcor:
+    - www.arcor.de
+  Arianna:
+    - arianna.libero.it
+  Arianna:
+    - www.arianna.com
+  Ask:
+    - ask.com
+    - www.askkids.com
+    - www.qbyrd.com
+    - .search-results.com
+    - searchqu.com
+    - safesearch.avira.com
+  Atlas:
+    - searchatlas.centrum.cz
+  auone:
+    - search.auone.jp
+  auone Images:
+    - sp-image.search.auone.jp
+  Austronaut:
+    - .austronaut.at
+  Babylon:
+    - search.babylon.com
+  Babylon:
+    - searchassist.babylon.com
+  Baidu:
+    - .baidu.co
+    - web.gougou.com
+  Biglobe:
+    - cgi.search.biglobe.ne.jp
+  Biglobe Images:
+    - images.search.biglobe.ne.jp
+  Bing:
+    - bing.com
+    - msnbc.msn.com
+    - dizionario.it.msn.com
+    - enciclopedia.it.msn.com
+    - cc.bingj.com
+  blekko:
+    - blekko.com
+  Blogdigger:
+    - www.blogdigger.com
+  Blogpulse:
+    - www.blogpulse.com
+  Bluewin:
+    - search.bluewin.ch
+  Canoe.ca:
+    - web.canoe.ca
+  Centrum:
+    - .centrum.cz
+  Charter:
+    - www.charter.net
+  Claro Search:
+    - claro-search.com
+  Clix:
+    - pesquisa.clix.pt
+  Conduit.com:
+    - search.conduit.com
+  Comcast:
+    - search.comcast.net
+  Crawler:
+    - www.crawler.com
+  Compuserve.com (Enhanced by Google):
+    - websearch.cs.com
+  Cuil:
+    - www.cuil.com
+  Daemon search:
+    - daemon-search.com
+  DasOertliche:
+    - .dasoertliche.de
+  DasTelefonbuch:
+    - www1.dastelefonbuch.de
+  Daum:
+    - search.daum.net
+  Delfi lv:
+    - smart.delfi.lv
+  Delfi EE:
+    - otsing.delfi.ee
+  dir.com:
+    - fr.dir.com
+  dmoz:
+    - dmoz.org
+  DuckDuckGo:
+    - duckduckgo.com
+  Earthlink:
+    - search.earthlink.net
+  Ecosia:
+    - ecosia.org
+  Eniro:
+    - www.eniro.se
+  Eurip:
+    - www.eurip.com
+  Euroseek:
+    - www.euroseek.com
+  Everyclick:
+    - www.everyclick.com
+  Excite:
+    - .excite.
+  Exalead:
+    - www.exalead.fr
+  Exalead:
+    - www.exalead.com
+  eo:
+    - eo.st
+  Fast Browser Search:
+    - www.fastbrowsersearch.com
+  Francite:
+    - recherche.francite.com
+  Findhurtig:
+    - www.findhurtig.dk
+  Fireball:
+    - www.fireball.de
+  Firstsfind:
+    - www.firstsfind.com
+  Fixsuche:
+    - www.fixsuche.de
+  Flix.de:
+    - www.flix.de
+  Forestle:
+    - forestle.
+    - forestle.
+  Free:
+    - .free.fr
+  FreeCause:
+    - search.freecause.com
+  Freenet:
+    - suche.freenet.de
+  FriendFeed:
+    - friendfeed.com
+  GAIS:
+    - gais.cs.ccu.edu.tw
+  Genieo:
+    - search.genieo.com
+  Geona:
+    - geona.net
+  Gigablast:
+    - .gigablast.com
+  Gnadenmeer:
+    - www.gnadenmeer.de
+  Gomeo:
+    - www.gomeo.com
+  goo:
+    - search.goo.ne.jp
+  Google query:
+    - www.cnn.com
+  Google SSL:
+    - encrypted.google.com
+  Google Blogsearch:
+    - blogsearch.google.com
+  Google Custom Search:
+    - google.com/cse
+    - google.com/custom
+  Google Translations:
+    - translate.google.com
+  Google Images:
+    - images.google.com
+  Google Maps:
+    - maps.google.com
+  Google News:
+    - news.google.com
+  Google Shopping:
+    - google.com/products
+  Google syndicated search:
+    - googlesyndicatedsearch.com
+  Google Video:
+    - video.google.com
+  Google Scholar:
+    - scholar.google.com
+  Google:
+    - google.com
+    - gogole.com
+    - gppgle.com
+    - googel.com
+    - search.avg.com
+    - isearch.avg.com
+    - darkoogle.com
+    - search.foxtab.com
+    - www.gooofullsearch.com
+    - search.hiyo.com
+    - search.incredimail.com
+    - search1.incredimail.com
+    - search2.incredimail.com
+    - search3.incredimail.com
+    - search4.incredimail.com
+    - search.sweetim.com
+    - www.fastweb.it
+    - search.juno.com
+    - find.tdc.dk
+    - it.luna.tv
+    - searchresults.verizon.com
+    - search.walla.co.il
+    - search.alot.com
+    - suche.gmx.net
+    - search.incredibar.com
+    - .delta-search.com
+    - search.1und1.de
+    - search.zonealarm.com
+    - start.lenovo.com
+    - wow.com
+    - search.leonardo.it
+    - www.optuszoo.com.au
+    - search.dolphin-browser.jp
+    - search.smt.docomo.ne.jp
+    - image.search.smt.docomo.ne.jp
+    - searches.safehomepage.com
+    - searches.f-secure.com
+    - webcache.googleusercontent.com
+  GoYellow.de:
+    - www.goyellow.de
+  Gule Sider:
+    - www.gulesider.no
+  Haosou:
+    - www.haosou.com
+  HighBeam:
+    - www.highbeam.com
+  Hit-Parade:
+    - .hit-parade.com
+  Holmes:
+    - holmes.ge
+  Hooseek:
+    - www.hooseek.com
+  Hotbot:
+    - www.hotbot.com
+  Icerocket:
+    - blogs.icerocket.com
+  ICQ:
+    - .icq.com
+  Ilse NL:
+    - www.ilse.nl
+  iMesh:
+    - search.imesh.com
+  Inbox:
+    - www2.inbox.com
+  InfoSpace:
+    - infospace.com
+    - dogpile.com
+    - tattoodle.com
+    - metacrawler.com
+    - webfetch.com
+    - webcrawler.com
+    - search.kiwee.com
+    - wsdsold.infospace.com
+    - isearch.babylon.com
+    - start.facemoods.com
+    - start.funmoods.com
+    - search.magentic.com
+    - search.searchcompletion.com
+    - www.searchmobileonline.com
+    - isearch.glarysoft.com
+    - search.chatzum.com
+    - home.speedbit.com
+    - search.b1.org
+    - searchya.com
+    - search.handycafe.com
+    - search.v9.com
+    - search.iminent.com
+    - utorrent.inspsearch.com
+  Yahoo:
+    - yahoo.com

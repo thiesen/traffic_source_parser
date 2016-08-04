@@ -27,7 +27,7 @@ module TrafficSourceParser
       def utmz_hash
         translated_utmz_hash = translate_keys(parsed_utmz_params, utmz_params_mapper)
 
-        if translated_utmz_hash.delete("utmgclid")
+        if translated_utmz_hash.delete(:utmgclid)
           translated_utmz_hash[:medium] = "cpc"
         end
 
