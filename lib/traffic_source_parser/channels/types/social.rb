@@ -14,12 +14,17 @@ module TrafficSourceParser
 
           # Traffic from any of approximately 400 social networks (that are not tagged as ads).
           def match_source?(traffic_source)
-            traffic_source[:medium] =~ SOCIAL_REGEX || known_social?(traffic_source[:source])
+            traffic_source[:medium] =~ SOCIAL_REGEX || get_known_social(traffic_source[:source])
           end
 
-          def known_social?(source)
-            return false unless source
-            TrafficSourceParser::Parser::ReferrerParser.social_sources.include?(source.downcase)
+          def get_known_social(source)
+            return unless source
+            known_social_sources.each{ |k, v| return k if source.downcase.match(v * '|') }
+            nil
+          end
+
+          def known_social_sources
+            TrafficSourceParser::Parser::ReferrerParser.social_sources
           end
 
       end
