@@ -43,8 +43,6 @@ social:
     - mylife\.ru
   Classmates\.com:
     - classmates\.com
-  Github:
-    - github\.com
   Google Plus:
     - ((plus\.)|(url\.))google\.com
     - googleplus
@@ -161,6 +159,8 @@ social:
     - blogspot
   Digg:
     - digg\.com
+  Instagram:
+    - instagram\.com
 
 
 search:
