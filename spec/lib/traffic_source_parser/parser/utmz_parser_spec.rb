@@ -64,7 +64,7 @@ describe TrafficSourceParser::Parser::UtmzParser do
           let(:cookie) { '231152653.1432828491.1.1.utmcsr=t.co|utmccn=(referral)|utmcmd=referral|utmcct=/teste' }
           let(:campaign) { '(referral)' }
           let(:medium) { 'referral' }
-          let(:channel) { 'Social' }
+          let(:channel) { 'Referral' }
           let(:source) { 'Twitter' }
           let(:content) { '/teste' }
 
