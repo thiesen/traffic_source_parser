@@ -12,7 +12,7 @@ module TrafficSourceParser
             'Social'
           end
 
-          # Traffic from any of approximately 400 social networks (that are not tagged as ads).
+          # Traffic from any of approximately 400 social networks (that are not tagged as other channel).
           def match_source?(traffic_source)
             traffic_source[:medium] =~ SOCIAL_REGEX || get_known_social(traffic_source[:source])
           end
