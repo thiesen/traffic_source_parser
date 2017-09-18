@@ -7,7 +7,7 @@ module TrafficSourceParser
       def initialize(utmz_hash)
         super(utmz_hash)
 
-        self[:source] = get_known_source(utmz_hash) if use_known_sources?(utmz_hash)
+        self[:source] = get_known_source
       end
 
     end

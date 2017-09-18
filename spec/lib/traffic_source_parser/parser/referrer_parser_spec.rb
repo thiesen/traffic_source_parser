@@ -123,6 +123,13 @@ describe TrafficSourceParser::Parser::ReferrerParser do
                       channel: "Referral",
                       term: '/en/about/'
                       },
+                      {
+                        cookie_value: "http://www.hdtecnologia.com.br/gestao-de-compras-sistema-de-gestao/",
+                        source:  "hdtecnologia.com.br",
+                        medium: "referral",
+                        campaign: "(referral)",
+                        channel: "Referral"
+                        }
                     ]
                   end
 

@@ -24,48 +24,38 @@ module TrafficSourceParser
         @referrer = referrer
         return  TrafficSourceParser::Result::Direct.new if direct_source?
         return  TrafficSourceParser::Result::Unknown.new if unknown_source?
-        referrer_parser.result(@referrer, referrer_source)
+        type, source = referrer_data
+        referrer_parser(type).result(@referrer, referrer_source(source))
       end
 
-      def referrer_parser
-        return  GenericParser unless params_for_referrer
-        REFERRER_PARSERS[referrer_type]
+      def referrer_parser(type)
+        REFERRER_PARSERS[type] || GenericParser
       end
 
       def invalid_referrer?
         !DomainTools.valid?(@referrer)
       end
 
-      def referrer_type
-        params_for_referrer["type"]
+      def referrer_data
+        referrer = DomainTools.clear_domain(@referrer.dup)
+        return unless referrer
+        referrers_list.each{|type, refs| refs.each{|ref, sources| return type, ref if referrer.match(sources * '|')} }
       end
 
-      def referrer_source
-        return referrer_domain unless params_for_referrer
-        params_for_referrer["source"]
+      def referrer_source(source)
+        source || referrer_domain
       end
 
       def referrer_domain
         DomainTools.domain(@referrer.dup)
       end
 
-      def referrer_regex
-         Regexp.new(referrer_domain)
-      end
-
-      def params_for_referrer
-        _, referrer_data = referrers_list.find do |referrer, referrer_hash|
-          referrer == DomainTools.clear_domain(@referrer.dup) || referrer == referrer_domain
-        end
-        referrer_data
-      end
-
       def social_sources
-        referrers_list.select {|x,y| y["type"] == "social" }.collect(&:first) #map {|x,y| x }
+        referrers_list["social"] #map {|x,y| x }
       end
 
       def search_sources
-        referrers_list.select {|x,y| y["type"] == "search" }.collect(&:first) #map {|x,y| x }
+        referrers_list["search"] #map {|x,y| x }
       end
 
       def referrers_list
