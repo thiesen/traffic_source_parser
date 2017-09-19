@@ -48,11 +48,11 @@ describe TrafficSourceParser::Parser::UtmzParser do
         it_behaves_like 'a traffic source campaign parser'
       end
 
-            context 'when medium is ppc but source is social' do
+      context 'when medium is ppc but source is social' do
         let(:cookie) { '78301271.1443725657.1.1.utmcsr=facebook|utmccn=fb_retargeting_1|utmcmd=ppc' }
         let(:campaign) { 'fb_retargeting_1' }
         let(:medium) { 'ppc' }
-        let(:channel) { 'Social' }
+        let(:channel) { 'Paid Search' }
         let(:source) { 'Facebook' }
 
         it_behaves_like 'a traffic source campaign parser'
@@ -64,7 +64,7 @@ describe TrafficSourceParser::Parser::UtmzParser do
           let(:cookie) { '231152653.1432828491.1.1.utmcsr=t.co|utmccn=(referral)|utmcmd=referral|utmcct=/teste' }
           let(:campaign) { '(referral)' }
           let(:medium) { 'referral' }
-          let(:channel) { 'Social' }
+          let(:channel) { 'Referral' }
           let(:source) { 'Twitter' }
           let(:content) { '/teste' }
 
