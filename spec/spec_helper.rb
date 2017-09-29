@@ -1,6 +1,6 @@
 require "codeclimate-test-reporter"
 
-CodeClimate::TestReporter.start
+# CodeClimate::TestReporter.start
 
 require 'traffic_source_parser'
 require 'pry'

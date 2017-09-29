@@ -84,7 +84,7 @@ describe TrafficSourceParser::Parser::ReferrerParser do
 
         before do
           thread_injected = false
-          allow(TrafficSourceParser::Parser::ReferrerParser::DomainTools).to
+          allow(TrafficSourceParser::Parser::DomainTools).to 
           receive(:clear_domain) do
             unless thread_injected
               thread_injected = true
