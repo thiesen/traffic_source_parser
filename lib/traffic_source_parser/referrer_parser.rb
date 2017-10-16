@@ -10,7 +10,7 @@ require 'yaml'
 module TrafficSourceParser
   module Parser
     class ReferrerParser
-      extend Tools
+      include Tools
 
       attr_reader :referrer
 
@@ -45,10 +45,10 @@ module TrafficSourceParser
       end
 
       def referrer_data
-        @referrer = DomainTools.clear_domain(referrer.dup)
-        return unless referrer
+        domain = DomainTools.clear_domain(referrer)
+        return unless domain
         referrers_list.each do |type, refs|
-          refs.each { |ref, sources| return type, ref if referrer.match(sources * '|') }
+          refs.each { |ref, sources| return type, ref if domain.match(sources * '|') }
         end
       end
 
@@ -56,13 +56,12 @@ module TrafficSourceParser
         REFERRER_PARSERS[type] || GenericParser
       end
 
-
       def referrer_source(source)
         source || referrer_domain
       end
 
       def referrer_domain
-        DomainTools.domain(referrer.dup)
+        DomainTools.domain(referrer)
       end
 
       def social_sources
