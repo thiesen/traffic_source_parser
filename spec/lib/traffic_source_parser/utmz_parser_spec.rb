@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe TrafficSourceParser::Parser::UtmzParser do
+describe TrafficSourceParser::UtmzParser do
 
   describe '.parse' do
 
-    subject { TrafficSourceParser::Parser::UtmzParser.parse(cookie) }
+    subject { TrafficSourceParser::UtmzParser.parse(cookie) }
 
     context 'when source is utmz' do
 

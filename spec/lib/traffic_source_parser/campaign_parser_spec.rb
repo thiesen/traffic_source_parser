@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe TrafficSourceParser::Parser::CampaignParser do
+describe TrafficSourceParser::CampaignParser do
 
   describe '.parse' do
 
-    subject { TrafficSourceParser::Parser::CampaignParser.parse(cookie) }
+    subject { TrafficSourceParser::CampaignParser.parse(cookie) }
 
     context 'when value is from referral' do
       let(:cookie) { 'utm_campaign=spring&utm_medium=referral&utm_source=exampleblog' }
