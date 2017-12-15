@@ -12,12 +12,11 @@ module TrafficSourceParser
     class ReferrerParser
       include Tools
 
-      attr_reader :referrer
-
       REFERRER_PARSERS = {
         'social' => SocialParser,
         'search' => SearchParser
       }.freeze
+      private_constant :REFERRER_PARSERS
 
       def initialize(referrer)
         @referrer = referrer
@@ -31,6 +30,8 @@ module TrafficSourceParser
       end
 
       private
+
+      attr_reader :referrer
 
       def direct_source?
         referrer == '(none)'
