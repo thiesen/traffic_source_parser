@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TrafficSourceParser::Parser::ReferrerParser do
+describe TrafficSourceParser::ReferrerParser do
   shared_examples_for 'returns the correct object with attributes' do
     it 'returns klass object with hash attributes' do
       sources.each do |source|

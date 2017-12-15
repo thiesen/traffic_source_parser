@@ -21,7 +21,7 @@ module TrafficSourceParser
       end
 
       def referrers_list
-        TrafficSourceParser::Parser::ReferrerParser.referrers_list
+        TrafficSourceParser::KnownSources.list
       end
 
     end
