@@ -24,7 +24,7 @@ module TrafficSourceParser
           end
 
           def known_social_sources
-            TrafficSourceParser::Parser::ReferrerParser.social_sources
+            TrafficSourceParser::KnownSources.social
           end
 
       end
