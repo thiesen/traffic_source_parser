@@ -9,14 +9,14 @@ module TrafficSourceParser
 
     AVAILABLE_TYPES = [
       Types::OtherAdvertising,
-      Types::Social,
-      Types::Referral,
       Types::Display,
       Types::Direct,
       Types::Organic,
-      Types::Paid,
       Types::Email,
-      Types::Unknown
+      Types::Unknown,
+      Types::Paid,
+      Types::Social,
+      Types::Referral
     ]
 
     def define_channel(traffic_source)

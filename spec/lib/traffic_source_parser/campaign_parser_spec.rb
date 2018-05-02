@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe TrafficSourceParser::Parser::CampaignParser do
+describe TrafficSourceParser::CampaignParser do
 
   describe '.parse' do
 
-    subject { TrafficSourceParser::Parser::CampaignParser.parse(cookie) }
+    subject { TrafficSourceParser::CampaignParser.parse(cookie) }
 
     context 'when value is from referral' do
       let(:cookie) { 'utm_campaign=spring&utm_medium=referral&utm_source=exampleblog' }
@@ -16,10 +16,20 @@ describe TrafficSourceParser::Parser::CampaignParser do
       it_behaves_like 'a traffic source campaign parser'
     end
 
-    context 'when value is from ppc but source is social' do
+    context 'when value is from ppc and source is Social' do
       let(:cookie) { 'utm_source=facebook&utm_medium=ppc&utm_campaign=fb_retargeting_1' }
       let(:campaign) { 'fb_retargeting_1' }
       let(:medium) { 'ppc' }
+      let(:channel) { 'Paid Search' }
+      let(:source) { 'Facebook' }
+
+      it_behaves_like 'a traffic source campaign parser'
+    end
+
+    context 'when value does not have medium but source is from social' do
+      let(:cookie) { 'utm_source=facebook&utm_campaign=fb_retargeting_2' }
+      let(:campaign) { 'fb_retargeting_2' }
+      let(:medium) { nil }
       let(:channel) { 'Social' }
       let(:source) { 'Facebook' }
 

@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe TrafficSourceParser::Parser::UtmzParser do
+describe TrafficSourceParser::UtmzParser do
 
   describe '.parse' do
 
-    subject { TrafficSourceParser::Parser::UtmzParser.parse(cookie) }
+    subject { TrafficSourceParser::UtmzParser.parse(cookie) }
 
     context 'when source is utmz' do
 
@@ -18,11 +18,21 @@ describe TrafficSourceParser::Parser::UtmzParser do
         it_behaves_like 'a traffic source campaign parser'
       end
 
+      context 'does not break when source is nil' do
+        let(:cookie) { '196453695.1333396706.2.2.utmgclid=CNjCh-n5lq8CFcZe7AodqRvAxA|utmccn=(not%20set)|utmcmd=(not%20set)|utmctr=mercado%20de%20arroba%20do%20boi' }
+        let(:campaign) { '(not set)' }
+        let(:medium) { 'cpc' }
+        let(:channel) { 'Paid Search' }
+        let(:source) { nil }
+
+        it_behaves_like 'a traffic source campaign parser'
+      end
+
       context 'when medium is display' do
         let(:cookie) { ' 186095035.1415927951.1.1.utmcsr=google|utmgclid=CI_WsND2-MECFezm7Aod6DsASw|utmccn=scm_beta|utmcmd=display|utmcct=Display_integra' }
         let(:campaign) { 'scm_beta' }
-        let(:medium) { 'display' }
-        let(:channel) { 'Display' }
+        let(:medium) { 'cpc' }
+        let(:channel) { 'Paid Search' }
         let(:source) { 'google' }
 
         it_behaves_like 'a traffic source campaign parser'
@@ -38,11 +48,11 @@ describe TrafficSourceParser::Parser::UtmzParser do
         it_behaves_like 'a traffic source campaign parser'
       end
 
-            context 'when medium is ppc but source is social' do
+      context 'when medium is ppc but source is social' do
         let(:cookie) { '78301271.1443725657.1.1.utmcsr=facebook|utmccn=fb_retargeting_1|utmcmd=ppc' }
         let(:campaign) { 'fb_retargeting_1' }
         let(:medium) { 'ppc' }
-        let(:channel) { 'Social' }
+        let(:channel) { 'Paid Search' }
         let(:source) { 'Facebook' }
 
         it_behaves_like 'a traffic source campaign parser'
@@ -57,6 +67,17 @@ describe TrafficSourceParser::Parser::UtmzParser do
           let(:channel) { 'Social' }
           let(:source) { 'Twitter' }
           let(:content) { '/teste' }
+
+          it_behaves_like 'a traffic source campaign parser with content'
+        end
+
+        context 'from Facebook with content and from referral medium' do
+          let(:cookie) { '9793965.1508981844.1.1.utmcsr=m.facebook.com|utmccn=(referral)|utmcmd=referral|utmcct=/' }
+          let(:campaign) { '(referral)' }
+          let(:medium) { 'referral' }
+          let(:channel) { 'Social' }
+          let(:source) { 'Facebook' }
+          let(:content) { '/' }
 
           it_behaves_like 'a traffic source campaign parser with content'
         end
@@ -85,40 +106,40 @@ describe TrafficSourceParser::Parser::UtmzParser do
       end
 
       context 'when value is from referral' do
-        {
-          cookie_value: "210677130.1432831711.1.1.utmcsr=rakuten|utmc" +
-                        "cn=linkshare|utmcmd=(not set)",
-          source: "rakuten",
-          campaign: "linkshare",
-          channel: "Referral",
-          medium: "(not set)"
-        }
+          let(:cookie){ "210677130.1432831711.1.1.utmcsr=rakuten|utmc" +
+                        "cn=linkshare|utmcmd=(not set)" }
+          let(:source) { "rakuten" }
+          let(:campaign) { "linkshare" }
+          let(:channel) { "(Other)" }
+          let(:medium) { "(not set)" }
+
+          it_behaves_like 'a traffic source campaign parser'
       end
 
       context 'when value is from other advertising' do
-        {
-          cookie_value: "10083233.1432828147.6.5.utmcsr=newsletter|ut" +
+          let(:cookie){ "10083233.1432828147.6.5.utmcsr=newsletter|ut" +
                         "mccn=20150527|utmcmd=newsletter-ef|utmctr=communi" +
-                        "tycolleges|utmcct=programa",
-          source: "newsletter",
-          campaign: "20150527",
-          channel: "Other",
-          medium: "newsletter-ef",
-          term: "communitycolleges",
-          content: "programa"
-        }
+                        "tycolleges|utmcct=programa" }
+          let(:source) { "newsletter" }
+          let(:campaign) { "20150527" }
+          let(:channel) { "(Other)" }
+          let(:medium) { "newsletter-ef"}
+          let(:term) { "communitycolleges" }
+          let(:content) { "programa" }
+
+          it_behaves_like 'a traffic source campaign parser'
       end
 
       context 'when value is from CPC campaign' do
-        {
-          cookie_value: "63514687.1432831892.1.1.utmcsr=adwords_gereb" +
+          let(:cookie){ "63514687.1432831892.1.1.utmcsr=adwords_gereb" +
                         "oletos1min5_22072014|utmgclid=CNjQrtjy5MUCFQYXHwo" +
-                        "d7k0A8g|utmccn=(not set)|utmcmd=(not set)",
-          source: "adwords_gereboletos1min5_22072014",
-          campaign: "(not set)",
-          channel: "Paid Search",
-          medium: "cpc"
-        }
+                        "d7k0A8g|utmccn=(not set)|utmcmd=(not set)" }
+          let(:source) { "adwords_gereboletos1min5_22072014" }
+          let(:campaign) { "(not set)" }
+          let(:channel) { "Paid Search" }
+          let(:medium) { "cpc" }
+
+          it_behaves_like 'a traffic source campaign parser'
       end
 
     end
