@@ -9,6 +9,7 @@ module TrafficSourceParser
     AVAILABLE_PARSERS = [ CampaignParser, UtmzParser ]
 
     def create(cookie_value)
+      cookie_value.downcase!
       AVAILABLE_PARSERS.each do |parser|
         return parser.parse(cookie_value) if parser.match_cookie_value?(cookie_value)
       end
